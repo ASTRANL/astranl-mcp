@@ -13,7 +13,7 @@ Flat per-task pricing €0.005-€0.05 (up to 65% cheaper than Claude Opus singl
 - **MCP tools advertised:** 9
 - **Dispatchable task classes:** 39
 - **Listed on canonical [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=astranl):** 10 version(s)
-- **Listed on Smithery:** ✗
+- **Listed on Smithery:** ✓
 - **Listed on:** Glama (pending)
 
 ## Quick start
