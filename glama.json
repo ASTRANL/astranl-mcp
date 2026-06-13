@@ -1,0 +1,12 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "tolegm"
+  ],
+  "mcpServers": {
+    "astranl": {
+      "type": "sse",
+      "url": "https://astranl.com/mcp/sse"
+    }
+  }
+}
