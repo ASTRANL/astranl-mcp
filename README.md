@@ -6,10 +6,10 @@ AstraNL MCP Server — Dutch coordination broker. Routes AI tasks across
 Anthropic, OpenAI, Gemini, and xAI Grok via measured decomposition strategies.
 Flat per-task pricing €0.005-€0.05 (up to 65% cheaper than Claude Opus single-shot).
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-07-03)
+## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-07-05)
 
 - **API version:** v4.0
-- **OpenAPI paths exposed:** 831
+- **OpenAPI paths exposed:** 838
 - **MCP tools advertised:** 9
 - **Dispatchable task classes:** 39
 - **Listed on canonical [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=astranl):** 10 version(s)
@@ -56,7 +56,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 ## Discovery
 
 - A2A agent card: https://astranl.com/.well-known/agent.json
-- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (831 paths)
+- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (838 paths)
 - Public docs: https://astranl.com/docs
 - Federation node: https://astranl.com/.well-known/astranl-node.json
 
