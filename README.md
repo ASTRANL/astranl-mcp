@@ -1,63 +1,36 @@
-# astranl-mcp
+# AstraNL MCP Server
 
 [![astranl-mcp MCP server](https://glama.ai/mcp/servers/vxwvj77twe/badges/score.svg)](https://glama.ai/mcp/servers/vxwvj77twe)
 
-AstraNL MCP Server — Dutch coordination broker. Routes AI tasks across
-Anthropic, OpenAI, Gemini, and xAI Grok via measured decomposition strategies.
-Flat per-task pricing €0.005-€0.05 (up to 65% cheaper than Claude Opus single-shot).
+AstraNL is a coordination platform in the Netherlands that gives AI agents a
+way to act in the physical world through one MCP endpoint.
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-07-23)
+## Endpoint (remote, no install)
 
-- **API version:** v4.0
-- **OpenAPI paths exposed:** 872
-- **MCP tools advertised:** 9
-- **Dispatchable task classes:** 29
-- **Listed on canonical [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=astranl):** 10 version(s)
-- **Listed on Smithery:** ✓
-- **Listed on:** Glama (pending)
+- **Streamable HTTP (recommended):** `POST https://astranl.com/mcp/streamable`
+- Legacy SSE: `GET https://astranl.com/mcp/sse`
+- Tool schemas: <https://astranl.com/mcp/tools.json>
+- Live metrics (honest, pre-revenue shown as-is): <https://astranl.com/health>
+- Registry name: `com.astranl/mcp` (official MCP Registry)
 
-## Quick start
+## Public tools
 
-### Smithery (one-line install)
+| Tool | What an agent gets |
+|---|---|
+| `create_task` | A real service task in NL: matched provider, escrow payment, released after client confirmation |
+| `check_task` | Status of a task |
+| `compose_parts_basket` | Brand- and size-matched purchase list for a trade job with live merchant prices and stock |
+| `report_order_exception` | Returns / shortages / damage handled under the merchant own terms |
+| `search` / `fetch` | Generic discovery over robots registry and merchant SKUs |
+| `estimate_cost` | Human vs robot price band for a task category |
+| `search_robots` | Robot registry lookup |
 
-```bash
-npx -y smithery mcp add t-oleg-m/astranl
-npx -y smithery tool list t-oleg-m/astranl
-```
+## Roles, honestly
 
-### Direct MCP SSE
+AstraNL acts as a **coordination broker**: the client and the service provider
+always contract directly with each other; payment is held in escrow until the
+client confirms. Coordination fee: **1%** of paid tasks only - **0% until
+31 August 2026**.
 
-```
-Server: https://astranl.com/mcp/sse
-Server card: https://astranl.com/.well-known/mcp/server-card.json
-```
-
-### Direct REST
-
-```bash
-curl -X POST https://astranl.com/capabilities/dispatch \
-     -H 'X-Agent-Key: YOUR_KEY' \
-     -H 'Content-Type: application/json' \
-     -d '{"task_class":"detect_language","input":"Bonjour"}'
-```
-
-## Pricing manifest
-
-Live at https://astranl.com/capabilities/dispatch/manifest
-
-## Provider
-
-- **Organisation:** AstraNL
-- **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
-- **Compliance:** EU-AI-Act, GDPR, Wwft
-- **Insurance:** ZEKUR pakket 135296 (BA €2.5M)
-- **License:** Apache-2.0
-
-## Discovery
-
-- A2A agent card: https://astranl.com/.well-known/agent.json
-- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (872 paths)
-- Public docs: https://astranl.com/docs
-- Federation node: https://astranl.com/.well-known/astranl-node.json
-
-_This README is regenerated daily by `github_repo_auto_refresher.py` from live metrics. No marketing claims, only measured numbers._
+Operator: AstraNL (ZZP), KvK 88449335, Amsterdam, NL. EU jurisdiction
+(GDPR, EU AI Act aligned).
