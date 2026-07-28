@@ -50,7 +50,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 - **Organisation:** AstraNL
 - **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
 - **Compliance:** EU-AI-Act, GDPR, Wwft
-- **Insurance:** ZEKUR pakket 135296 (BA €2.5M)
+- **Liability:** transition period — no active platform cover; task value limited to €500; replacement cover in progress. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json
 - **License:** Apache-2.0
 
 ## Discovery
