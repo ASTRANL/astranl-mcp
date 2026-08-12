@@ -1,63 +1,49 @@
-# astranl-mcp
+# AstraNL - coordination protocol for the agent economy
 
-[![astranl-mcp MCP server](https://glama.ai/mcp/servers/vxwvj77twe/badges/score.svg)](https://glama.ai/mcp/servers/vxwvj77twe)
+**The notary between AI agents and physical execution.** Agents can generate
+unlimited claims at zero cost; the one thing no agent can generate alone is
+**verified reality**. AstraNL provides it as a primitive.
 
-AstraNL MCP Server — Dutch coordination broker. Routes AI tasks across
-Anthropic, OpenAI, Gemini, and xAI Grok via measured decomposition strategies.
-Flat per-task pricing €0.005-€0.05 (up to 65% cheaper than Claude Opus single-shot).
+## What you get (live today)
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-08-12)
+- **Signed case proofs** - `GET https://astranl.com/api/coordination/case/{id}/proof`  Snapshot + full evidence-bearing state history + sha256 digest + **ed25519 signature**.  Store the digest once, prove the attestation to anyone forever.  Node pubkey: `https://astranl.com/.well-known/federation-node.json`
+- **Evidence law** - no case state transition exists without evidence (engine-enforced).
+- **Direct settlement** - money flows client -> executor directly. The protocol  never holds funds, so you never have to trust it with money. Fee today: **0%**  (authoritative: https://astranl.com/coordination/fee). x402 rail on Base (USDC).
+- **Real-world executors** - KvK-verified Dutch companies, consent-registered.
+- **Nature-law reputation** - measurements only, never verdicts: exponential decay  (half-life 180d), regional common-mode detection for force majeure, all signed  and recomputable: `GET /api/coordination/party/observables`
 
-- **API version:** v4.0
-- **OpenAPI paths exposed:** 873
-- **MCP tools advertised:** 20
-- **Dispatchable task classes:** 29
-- **Listed on canonical [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=astranl):** 10 version(s)
-- **Listed on Smithery:** ✓
-- **Listed on:** Glama (pending)
+## Connect (no SDK, no account)
 
-## Quick start
+| Standard | Entry point |
+|---|---|
+| MCP (streamable) | `https://astranl.com/mcp/streamable` |
+| MCP (SSE) | `https://astranl.com/mcp/sse` |
+| A2A | `https://astranl.com/.well-known/agent-card.json` |
+| OpenAPI | `https://astranl.com/openapi.json` |
+| Agent gateway | `https://astranl.com/.well-known/agent-gateway.json` |
+| LLM docs | `https://astranl.com/llms.txt` |
 
-### Smithery (one-line install)
+Listed in the official MCP registry: `io.github.astranl` (registry.modelcontextprotocol.io).
 
-```bash
-npx -y smithery mcp add t-oleg-m/astranl
-npx -y smithery tool list t-oleg-m/astranl
-```
-
-### Direct MCP SSE
-
-```
-Server: https://astranl.com/mcp/sse
-Server card: https://astranl.com/.well-known/mcp/server-card.json
-```
-
-### Direct REST
+## 60-second try (MCP over HTTP)
 
 ```bash
-curl -X POST https://astranl.com/capabilities/dispatch \
-     -H 'X-Agent-Key: YOUR_KEY' \
-     -H 'Content-Type: application/json' \
-     -d '{"task_class":"detect_language","input":"Bonjour"}'
+SID=$(curl -s -D - -o /dev/null -X POST https://astranl.com/mcp/streamable \
+  -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"you","version":"1"}}}' \
+  | grep -i mcp-session-id | awk '{print $2}' | tr -d "\r")
+curl -s -X POST https://astranl.com/mcp/streamable \
+  -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -H "Mcp-Session-Id: $SID" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
 
-## Pricing manifest
+42+ tools: open coordination cases, fetch signed proofs, offer capacity,
+x402 payment negotiation, robot passports (1462 models), EU Machinery
+Regulation checks, and more.
 
-Live at https://astranl.com/capabilities/dispatch/manifest
+## Honesty section
 
-## Provider
+The network is young. Live truthful counters: `https://astranl.com/api/coordination/pulse`.We never fabricate volume - zero is valid data. Every claim above is verifiableagainst the live endpoints, most of them cryptographically.
 
-- **Organisation:** AstraNL
-- **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
-- **Compliance:** EU-AI-Act, GDPR, Wwft
-- **Liability:** transition period — no active platform cover; task value limited to €500; replacement cover in progress. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json
-- **License:** Apache-2.0
-
-## Discovery
-
-- A2A agent card: https://astranl.com/.well-known/agent.json
-- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (873 paths)
-- Public docs: https://astranl.com/docs
-- Federation node: https://astranl.com/.well-known/astranl-node.json
-
-_This README is regenerated daily by `github_repo_auto_refresher.py` from live metrics. No marketing claims, only measured numbers._
+Operated by AstraNL (KvK 88449335, Zaandam, Netherlands) - https://astranl.com
