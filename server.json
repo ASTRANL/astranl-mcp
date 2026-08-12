@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.astranl",
+  "description": "Coordination protocol: notary between AI agents and physical execution (NL/EU). Signed case proofs, direct settlement, 0% launch fee.",
+  "version": "1.33.1",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://astranl.com/mcp/streamable"
+    },
+    {
+      "type": "sse",
+      "url": "https://astranl.com/mcp/sse"
+    }
+  ],
+  "websiteUrl": "https://astranl.com"
+}
