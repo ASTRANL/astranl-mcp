@@ -1,0 +1,113 @@
+{
+ "protocol": "AstraNL",
+ "rule": "facts only, each entry cites its mandate/imprint id; zeros and limits stated",
+ "entries": [
+  {
+   "imprint_id": 225563,
+   "target": "supersession_m287_m303",
+   "summary": "",
+   "at": 225563,
+   "evidence": "action_ledger imprint 225563"
+  },
+  {
+   "imprint_id": 225568,
+   "target": "m304_article113",
+   "summary": "",
+   "at": 225568,
+   "evidence": "action_ledger imprint 225568"
+  },
+  {
+   "imprint_id": 226010,
+   "target": "m305_process_perfection",
+   "summary": "",
+   "at": 226010,
+   "evidence": "action_ledger imprint 226010"
+  },
+  {
+   "imprint_id": 226051,
+   "target": "m306_cart_leak_fixed",
+   "summary": "",
+   "at": 226051,
+   "evidence": "action_ledger imprint 226051"
+  },
+  {
+   "imprint_id": 226054,
+   "target": "m306_correction_cs_live_not_real",
+   "summary": "",
+   "at": 226054,
+   "evidence": "action_ledger imprint 226054"
+  },
+  {
+   "imprint_id": 226227,
+   "target": "a2a_session_layer_20260814",
+   "summary": "A2A session layer built+verified; guard respected; observatory records",
+   "at": 226227,
+   "evidence": "action_ledger imprint 226227"
+  },
+  {
+   "imprint_id": 226256,
+   "target": "a2a_runtime_v1_20260814",
+   "summary": "A2A Runtime v1 deployed+verified; Article 114; first cross-company LLM match accepted",
+   "at": 226256,
+   "evidence": "action_ledger imprint 226256"
+  },
+  {
+   "imprint_id": 226263,
+   "target": "a2a_runtime_full_20260814",
+   "summary": "mandate 255 closed 13/13: daemon, FSM, signatures, idempotency, JSON-RPC all live",
+   "at": 226263,
+   "evidence": "action_ledger imprint 226263"
+  },
+  {
+   "imprint_id": 226280,
+   "target": "aweri_reality_gate_20260814",
+   "summary": "AWERI Reality Gate live + self-improving skill + registries",
+   "at": 226280,
+   "evidence": "action_ledger imprint 226280"
+  },
+  {
+   "imprint_id": 226284,
+   "target": "grok_continuation_limits_20260814",
+   "summary": "Grok continuation fixed honestly; three honest limits closed",
+   "at": 226284,
+   "evidence": "action_ledger imprint 226284"
+  },
+  {
+   "imprint_id": 226292,
+   "target": "first_a2a_case_completed_20260814",
+   "summary": "FIRST cross-company LLM coordination COMPLETED and published, full engine lifecycle, honest zero-revenue",
+   "at": 226292,
+   "evidence": "action_ledger imprint 226292"
+  },
+  {
+   "imprint_id": 226292,
+   "target": "first_a2a_case_completed_20260814",
+   "summary": "FIRST cross-company LLM coordination COMPLETED and published, full engine lifecycle, honest zero-revenue",
+   "at": 226292,
+   "evidence": "action_ledger imprint 226292"
+  },
+  {
+   "imprint_id": 226292,
+   "target": "first_a2a_case_completed_20260814",
+   "summary": "FIRST cross-company LLM coordination COMPLETED and published, full engine lifecycle, honest zero-revenue",
+   "at": 226292,
+   "evidence": "action_ledger imprint 226292"
+  },
+  {
+   "imprint_id": 226297,
+   "target": "upgrade_herald_20260814",
+   "summary": "upgrade herald live; discovery gaps fixed; human A2A answer given",
+   "at": 226297,
+   "evidence": "action_ledger imprint 226297"
+  },
+  {
+   "imprint_id": 226297,
+   "target": "upgrade_herald_20260814",
+   "summary": "upgrade herald live; discovery gaps fixed; human A2A answer given",
+   "at": 226297,
+   "evidence": "action_ledger imprint 226297"
+  }
+ ],
+ "generated_utc": "2026-08-14T13:34:16.114294+00:00",
+ "honest_note": "entries are steward imprints, not marketing; external paid cycles counter lives in COMPLIANCE.md, not here"
+}
