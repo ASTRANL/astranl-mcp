@@ -106,8 +106,456 @@
    "summary": "upgrade herald live; discovery gaps fixed; human A2A answer given",
    "at": 226297,
    "evidence": "action_ledger imprint 226297"
+  },
+  {
+   "imprint_id": 226308,
+   "target": "system_pass_external_relations_20260814",
+   "summary": "system pass done: security fixed, X+GitHub external organs live, MCP payload ready behind JWT gate",
+   "at": 226308,
+   "evidence": "action_ledger imprint 226308"
+  },
+  {
+   "imprint_id": 226375,
+   "target": "density_invitations_20260814",
+   "summary": "invitation surfaces live; density push started",
+   "at": 226375,
+   "evidence": "action_ledger imprint 226375"
+  },
+  {
+   "imprint_id": 226392,
+   "target": "gpt_gap_openapi_public_20260814",
+   "summary": "GPT-found connector gap closed: full A2A cycle now in ChatGPT-facing spec",
+   "at": 226392,
+   "evidence": "action_ledger imprint 226392"
+  },
+  {
+   "imprint_id": 226413,
+   "target": "money_language_purge_20260814",
+   "summary": "money-language purge complete across all discovery surfaces with permanent guard",
+   "at": 226413,
+   "evidence": "action_ledger imprint 226413"
+  },
+  {
+   "imprint_id": 226422,
+   "target": "homework_next_session_20260814",
+   "summary": "homework prepared for next Chromebook steward session; read HOMEWORK_NEXT_SESSION.md first",
+   "at": 226422,
+   "evidence": "action_ledger imprint 226422"
+  },
+  {
+   "imprint_id": 226591,
+   "target": "steward_relay_20260814",
+   "summary": "Steward Relay live: tasks/reports flow through astranl.com without server access",
+   "at": 226591,
+   "evidence": "action_ledger imprint 226591"
+  },
+  {
+   "imprint_id": 226601,
+   "target": "aweri_watch_20260814",
+   "summary": "AWERI Watch: new timed-intent coordination primitive live and observing real reality",
+   "at": 226601,
+   "evidence": "action_ledger imprint 226601"
+  },
+  {
+   "imprint_id": 226609,
+   "target": "aweri_watch_completion_20260814",
+   "summary": "AWERI Watch complete: observe->met->notify->demand->coordination path closed",
+   "at": 226609,
+   "evidence": "action_ledger imprint 226609"
+  },
+  {
+   "imprint_id": 226618,
+   "target": "watch_to_companies_20260814",
+   "summary": "Watch aimed at companies: article queued, compliant outreach pack ready behind founder gate",
+   "at": 226618,
+   "evidence": "action_ledger imprint 226618"
+  },
+  {
+   "imprint_id": 226625,
+   "target": "butterfly_garden_timing_board_20260814",
+   "summary": "butterfly garden bed #1 planted: public timing board live with real WHEN-truth",
+   "at": 226625,
+   "evidence": "action_ledger imprint 226625"
+  },
+  {
+   "imprint_id": 226637,
+   "target": "internal_watch_organism_20260814",
+   "summary": "organism self-coordination live: 6 internal watches, first routine fully eliminated",
+   "at": 226637,
+   "evidence": "action_ledger imprint 226637"
+  },
+  {
+   "imprint_id": 226644,
+   "target": "watch_sense_organ_nervous_20260814",
+   "summary": "Watch became organism sense organ: sensor in nervous system, parallel-steward work verified not duplicated",
+   "at": 226644,
+   "evidence": "action_ledger imprint 226644"
+  },
+  {
+   "imprint_id": 226664,
+   "target": "failed_units_rootcause_20260814",
+   "summary": "organism-sensed degradation root-caused: 2 of 3 units healed structurally, 1 programmed honestly",
+   "at": 226664,
+   "evidence": "action_ledger imprint 226664"
+  },
+  {
+   "imprint_id": 226670,
+   "target": "zero_failed_units_20260814",
+   "summary": "zero failed units: organism healthy and knows it through its own new sense organ",
+   "at": 226670,
+   "evidence": "action_ledger imprint 226670"
+  },
+  {
+   "imprint_id": 226682,
+   "target": "maturity_registry_R0R7_20260814",
+   "summary": "H3 closed: Maturity Registry live with enforcement; parallel steward independently closed brak/followup programs",
+   "at": 226682,
+   "evidence": "action_ledger imprint 226682"
+  },
+  {
+   "imprint_id": 226690,
+   "target": "brak_rootcause_falsified_20260814",
+   "summary": "organism fully green: falsified own hypothesis honestly, zero failed units, sensor loop proven end-to-end",
+   "at": 226690,
+   "evidence": "action_ledger imprint 226690"
+  },
+  {
+   "imprint_id": 226700,
+   "target": "finish_open_tails_20260814",
+   "summary": "open tails finished: energy consumer wired, relay+homework synced to reality",
+   "at": 226700,
+   "evidence": "action_ledger imprint 226700"
+  },
+  {
+   "imprint_id": 226712,
+   "target": "external_drift_sentinel_20260814",
+   "summary": "blind spot closed: organ now watches how the outside world describes AstraNL",
+   "at": 226712,
+   "evidence": "action_ledger imprint 226712"
+  },
+  {
+   "imprint_id": 226719,
+   "target": "tech_stack_sentinel_20260814",
+   "summary": "second blind spot closed: every cell now monitored for newer/safer tech",
+   "at": 226719,
+   "evidence": "action_ledger imprint 226719"
+  },
+  {
+   "imprint_id": 226729,
+   "target": "autonomous_upgrader_20260814",
+   "summary": "routine left the founder desk: organism upgrades its own libraries with proof and rollback",
+   "at": 226729,
+   "evidence": "action_ledger imprint 226729"
+  },
+  {
+   "imprint_id": 226750,
+   "target": "m307_six_defects",
+   "summary": "",
+   "at": 226750,
+   "evidence": "action_ledger imprint 226750"
+  },
+  {
+   "imprint_id": 226763,
+   "target": "m308_full_scan",
+   "summary": "",
+   "at": 226763,
+   "evidence": "action_ledger imprint 226763"
+  },
+  {
+   "imprint_id": 227247,
+   "target": "m309_three_debts_closed",
+   "summary": "",
+   "at": 227247,
+   "evidence": "action_ledger imprint 227247"
+  },
+  {
+   "imprint_id": 227296,
+   "target": "m310_tails_closed",
+   "summary": "",
+   "at": 227296,
+   "evidence": "action_ledger imprint 227296"
+  },
+  {
+   "imprint_id": 227327,
+   "target": "external_debt1_dns_autonomous_20260814",
+   "summary": "external debt 1 taken over from Chromebook and automated end-to-end via DNS auth",
+   "at": 227327,
+   "evidence": "action_ledger imprint 227327"
+  },
+  {
+   "imprint_id": 227348,
+   "target": "chromebook_debt_verified_sentinel_fixed_20260815",
+   "summary": "Chromebook report verified true; my own sentinel false alarm found and corrected; listing was never stale",
+   "at": 227348,
+   "evidence": "action_ledger imprint 227348"
+  },
+  {
+   "imprint_id": 227368,
+   "target": "external_catalogs_20260815",
+   "summary": "two of three catalogs now have live PRs; only Smithery account gate remains",
+   "at": 227368,
+   "evidence": "action_ledger imprint 227368"
+  },
+  {
+   "imprint_id": 227431,
+   "target": "smithery_truth_20260815",
+   "summary": "Smithery reality established: unlisted stale entry, not a missing one",
+   "at": 227431,
+   "evidence": "action_ledger imprint 227431"
+  },
+  {
+   "imprint_id": 227439,
+   "target": "founder_privacy_fix_20260815",
+   "summary": "founder privacy breach fixed across 8499 pages; permanent guard added; premature publish stopped",
+   "at": 227439,
+   "evidence": "action_ledger imprint 227439"
+  },
+  {
+   "imprint_id": 227474,
+   "target": "smithery_closed_registry_streamable_20260815",
+   "summary": "external listings fully canon: protocol-named, current, streamable-first; founder identity absent",
+   "at": 227474,
+   "evidence": "action_ledger imprint 227474"
+  },
+  {
+   "imprint_id": 227489,
+   "target": "reality_harness_voice_lane_20260815",
+   "summary": "voice lane live: any assistant founder speaks to can now queue steward tasks; positioning research grounded",
+   "at": 227489,
+   "evidence": "action_ledger imprint 227489"
+  },
+  {
+   "imprint_id": 227615,
+   "target": "money_gate_two_tier_20260815",
+   "summary": "Reality Harness money gate complete: two-tier principal authority enforced at the moment of commitment",
+   "at": 227615,
+   "evidence": "action_ledger imprint 227615"
+  },
+  {
+   "imprint_id": 227623,
+   "target": "popularization_verifier_proofs_20260815",
+   "summary": "trust made accessible: keyless signature verifier + living proofs index live",
+   "at": 227623,
+   "evidence": "action_ledger imprint 227623"
+  },
+  {
+   "imprint_id": 227684,
+   "target": "verified_badge_20260815",
+   "summary": "garden bed planted: third parties can now wear our live-verifying trust badge",
+   "at": 227684,
+   "evidence": "action_ledger imprint 227684"
+  },
+  {
+   "imprint_id": 227704,
+   "target": "timing_human_page_20260815",
+   "summary": "human Timing Board page live: the garden got its human door",
+   "at": 227704,
+   "evidence": "action_ledger imprint 227704"
+  },
+  {
+   "imprint_id": 227708,
+   "target": "timing_grandmother_rebuild_20260815",
+   "summary": "timing page rebuilt grandmother-first after founder catch",
+   "at": 227708,
+   "evidence": "action_ledger imprint 227708"
+  },
+  {
+   "imprint_id": 227714,
+   "target": "claims_precision_energy_20260815",
+   "summary": "claims precision enforced: energy guidance now truthfully scoped to dynamic contracts everywhere",
+   "at": 227714,
+   "evidence": "action_ledger imprint 227714"
+  },
+  {
+   "imprint_id": 227725,
+   "target": "article115_claims_precision_20260815",
+   "summary": "claims precision became constitutional law with living enforcement at every level: constitution, checklist, brain, organ, sensor",
+   "at": 227725,
+   "evidence": "action_ledger imprint 227725"
+  },
+  {
+   "imprint_id": 227735,
+   "target": "tails_closed_20260815",
+   "summary": "session tails closed: article live+audited, badge offered to counterparties, one bug honestly carded",
+   "at": 227735,
+   "evidence": "action_ledger imprint 227735"
+  },
+  {
+   "imprint_id": 227761,
+   "target": "voice_wake_verified_20260815",
+   "summary": "founder voice remote verified end-to-end; productization queued",
+   "at": 227761,
+   "evidence": "action_ledger imprint 227761"
+  },
+  {
+   "imprint_id": 227779,
+   "target": "multimodel_coordination_20260815",
+   "summary": "multi-model founder coordination live: shared memory + serialized execution + cockpit",
+   "at": 227779,
+   "evidence": "action_ledger imprint 227779"
+  },
+  {
+   "imprint_id": 227795,
+   "target": "session_grade_commands_20260815",
+   "summary": "session-grade multi-model founder dialogue proven live",
+   "at": 227795,
+   "evidence": "action_ledger imprint 227795"
+  },
+  {
+   "imprint_id": 227800,
+   "target": "m302_correction_20260815",
+   "summary": "honest correction: m302 session-file claim was unverified and initially false; root fixed, replay proven, correction on the record",
+   "at": 227800,
+   "evidence": "action_ledger imprint 227800"
+  },
+  {
+   "imprint_id": 227825,
+   "target": "protocol_kernel_doctrine_20260815",
+   "summary": "doctrine: why the core serves AstraNL - neutrality is the product",
+   "at": 227825,
+   "evidence": "action_ledger imprint 227825"
+  },
+  {
+   "imprint_id": 227829,
+   "target": "kernel_hardening_20260815",
+   "summary": "protocol kernel hardened: deny+redact in the voice-woken executor",
+   "at": 227829,
+   "evidence": "action_ledger imprint 227829"
+  },
+  {
+   "imprint_id": 227838,
+   "target": "layer0_moment_seal_20260815",
+   "summary": "the eternal rung protocolized: sealed moments verifiable offline forever",
+   "at": 227838,
+   "evidence": "action_ledger imprint 227838"
+  },
+  {
+   "imprint_id": 227846,
+   "target": "principle0_full_penetration_20260815",
+   "summary": "the eternal rung is now the first word of the constitution and the first sensor of the nerves",
+   "at": 227846,
+   "evidence": "action_ledger imprint 227846"
+  },
+  {
+   "imprint_id": 227857,
+   "target": "protocol_not_niches_triad_20260815",
+   "summary": "protocol role elevated: kernel canonized, tentacles named, triad opened; one process slip admitted and sealed into discipline",
+   "at": 227857,
+   "evidence": "action_ledger imprint 227857"
+  },
+  {
+   "imprint_id": 227864,
+   "target": "triad_process_organized_20260815",
+   "summary": "triad pilot process organized: staged, owned, gated minimally, first task queued",
+   "at": 227864,
+   "evidence": "action_ledger imprint 227864"
+  },
+  {
+   "imprint_id": 227882,
+   "target": "fee_guarantee_audit_20260815",
+   "summary": "reward finalized: sealed 1% claims with access-collateral enforcement, proven both directions; audit clean except demand",
+   "at": 227882,
+   "evidence": "action_ledger imprint 227882"
+  },
+  {
+   "imprint_id": 227901,
+   "target": "audit_tails_closed_20260815",
+   "summary": "audit tails closed: healthy organ no longer reported broken, fee guarantee now watched and settleable end-to-end",
+   "at": 227901,
+   "evidence": "action_ledger imprint 227901"
+  },
+  {
+   "imprint_id": 227914,
+   "target": "triad_stage1_robot_door_20260815",
+   "summary": "TRIAD stage 1 closed: the robot door is open, evidence is sealed digests, the cycle runs without a human inside",
+   "at": 227914,
+   "evidence": "action_ledger imprint 227914"
+  },
+  {
+   "imprint_id": 227932,
+   "target": "escrow_purge_honest_rails_20260815",
+   "summary": "chromebook finding closed at the root: our surfaces purged, permanent guard added, fee rails made honest",
+   "at": 227932,
+   "evidence": "action_ledger imprint 227932"
+  },
+  {
+   "imprint_id": 227947,
+   "target": "tsub_pool_20260815",
+   "summary": "subscription compute pool live: the founder's flat-rate models can now pull heavy work and teach the brain through validated doors",
+   "at": 227947,
+   "evidence": "action_ledger imprint 227947"
+  },
+  {
+   "imprint_id": 227952,
+   "target": "tsub_read_door_20260815",
+   "summary": "read door opens the first real subscription work session",
+   "at": 227952,
+   "evidence": "action_ledger imprint 227952"
+  },
+  {
+   "imprint_id": 227958,
+   "target": "tsub_one_tool_loop_20260815",
+   "summary": "orchestrated T-SUB delivered: one prompt, one tool, whole loop, zero courier",
+   "at": 227958,
+   "evidence": "action_ledger imprint 227958"
+  },
+  {
+   "imprint_id": 227977,
+   "target": "stripe_rail_outreach_20260815",
+   "summary": "survival rail live and wired; outreach pack made Article-115-clean; ChatGPT path unblocked to one deletion",
+   "at": 227977,
+   "evidence": "action_ledger imprint 227977"
+  },
+  {
+   "imprint_id": 228014,
+   "target": "accelerate_tsub_20260815",
+   "summary": "events accelerated: T-SUB first session decoupled from ChatGPT; OpenAI first contact will be witnessed automatically",
+   "at": 228014,
+   "evidence": "action_ledger imprint 228014"
+  },
+  {
+   "imprint_id": 228024,
+   "target": "tsub_x3_orchestration_20260815",
+   "summary": "three subscriptions put to work through the chromebook conductor - server-verifiable closure",
+   "at": 228024,
+   "evidence": "action_ledger imprint 228024"
+  },
+  {
+   "imprint_id": 228030,
+   "target": "server_launched_tsub_20260815",
+   "summary": "the founder said launch it yourself - done: subscription session launched from the server, workpack completed, brain taught, zero API cents",
+   "at": 228030,
+   "evidence": "action_ledger imprint 228030"
+  },
+  {
+   "imprint_id": 228036,
+   "target": "scoped_tsub_token_20260815",
+   "summary": "least-privilege worker token minted and live - the classifier now evaluates a materially different, honestly-scoped thing",
+   "at": 228036,
+   "evidence": "action_ledger imprint 228036"
+  },
+  {
+   "imprint_id": 228045,
+   "target": "command_model_executed_20260815",
+   "summary": "command model proven end-to-end: launched, harvested, validated, counted - 17 subscription lessons in the brain today",
+   "at": 228045,
+   "evidence": "action_ledger imprint 228045"
+  },
+  {
+   "imprint_id": 228053,
+   "target": "tsub_continuous_organ_20260815",
+   "summary": "the permanent connection exists: a systemd organ turns queue items into brain knowledge through subscription sessions, continuously, unattended",
+   "at": 228053,
+   "evidence": "action_ledger imprint 228053"
+  },
+  {
+   "imprint_id": 231579,
+   "target": "m326_astralock",
+   "summary": "CHAT m326 (Fable, 2026-08-18 ~21:00-21:55 UTC): founder gave 2 docs (2030 roadmap AstraLock + agent-world audit) - implement fully. DONE+VERIFIED: docs byte-exact in doctrines/ (sha 96a30d11/83811347); core/astralock.py (canonical json, ed25519, RFC6962 merkle, append-only db, STH); hall bridge; 7 public REST verifier routes live on prod; MCP tools astralock_verify/astralock_sth live; hourly astranl-astralock-sth.timer; CONSTITUTION Article 117 (anchor-guard 252); ASTRALOCK_REGISTRY.json; agent-",
+   "at": 231579,
+   "evidence": "action_ledger imprint 231579"
   }
  ],
- "generated_utc": "2026-08-14T13:34:16.114294+00:00",
+ "generated_utc": "2026-08-18T22:19:19.568495+00:00",
  "honest_note": "entries are steward imprints, not marketing; external paid cycles counter lives in COMPLIANCE.md, not here"
 }
