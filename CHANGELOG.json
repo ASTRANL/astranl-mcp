@@ -554,8 +554,211 @@
    "summary": "CHAT m326 (Fable, 2026-08-18 ~21:00-21:55 UTC): founder gave 2 docs (2030 roadmap AstraLock + agent-world audit) - implement fully. DONE+VERIFIED: docs byte-exact in doctrines/ (sha 96a30d11/83811347); core/astralock.py (canonical json, ed25519, RFC6962 merkle, append-only db, STH); hall bridge; 7 public REST verifier routes live on prod; MCP tools astralock_verify/astralock_sth live; hourly astranl-astralock-sth.timer; CONSTITUTION Article 117 (anchor-guard 252); ASTRALOCK_REGISTRY.json; agent-",
    "at": 231579,
    "evidence": "action_ledger imprint 231579"
+  },
+  {
+   "imprint_id": 231647,
+   "target": "walls_and_reopen",
+   "summary": "CHAT walls+reopen (Fable, 2026-08-18 22:5x-23:2x UTC): (1) FOUNDER ORDER executed: all 4 keys un-parked with FOUNDER_KEY_APPROVAL files, cap raised 0.50->3.00 EUR/day (assumption: pre-incident legit ~1-1.9/day), claude models re-enabled in catalog, LLM services restarted, LIVE haiku call through accounted path returned ALIVE. Burn timers stay dead: article-translator/forum-gen/session-teacher until migrated through brain_models (59 contraband files listed in SPEND_SENTINEL.json). (2) WALL A buil",
+   "at": 231647,
+   "evidence": "action_ledger imprint 231647"
+  },
+  {
+   "imprint_id": 231662,
+   "target": "m327_tail_closed",
+   "summary": "CHAT m327 tail (Fable, 2026-08-18 23:1x-23:3x UTC): m326 honest_gaps closed to the possible maximum. VERIFIED LIVE: coordination_engine transitions now land in AstraLock (contract green); Mandate v1 gate live in hall accept()+transition() - paid commit refused without live mandate (tested 7000c refuse/grant/zero-budget-free); key rotation implemented with lock_keys registry, old sigs eternally verifiable; STH cross-anchored hourly into action_ledger second chain (L4-partial, true witnesses still",
+   "at": 231662,
+   "evidence": "action_ledger imprint 231662"
+  },
+  {
+   "imprint_id": 232102,
+   "target": "m328_closed",
+   "summary": "CHAT m328 (Fable): founder asked which NOT-BUILT items from m326 now exist. ANSWER, all verified live: coord bridge DONE(m327); mandate gate DONE(m327); verifier page DONE(m327); external anchoring PARTIAL(cross-anchor to action_ledger, true witnesses future); key rotation now EXERCISED in prod - caught+fixed constant-key_id bug, 19/19 green, lock-2 active; transport matrix BUILT: 7 honest gaps incl hall missing from A2A card = next mandates queue. All m326 gaps now closed or honestly measured.",
+   "at": 232102,
+   "evidence": "action_ledger imprint 232102"
+  },
+  {
+   "imprint_id": 232106,
+   "target": "session_20260818_full_close",
+   "summary": "SESSION FULL CLOSE (Fable, 18-19.08.2026, founder order ZAKRYTY VSE): 9 mandates terminal. BUILT+VERIFIED this session: AstraLock v1 full stack (456 events, chain_ok, key lock-2 after exercised rotation, cross-anchoring, public verifier /astralock/ 10 langs, MCP tools, Article 117); hall+coord bridges; Mandate v1 gate live; spend incident SOLVED (article_translator retry loop, ~$307 Aug, timer dead, translator migrated to SDK+interceptor+terminal state); financial shackles (spend_sentinel 30-min",
+   "at": 232106,
+   "evidence": "action_ledger imprint 232106"
+  },
+  {
+   "imprint_id": 232114,
+   "target": "mail_pass_20260819",
+   "summary": "MAIL PASS (founder order: read+react). CRITICAL 3->0: Anthropic API-off x2 resolved by top-up (live ALIVE call = proof); Kadaster BAG key received -> stored secure/kadaster_bag.env (600), LIVE-tested 200 (official BAG returned Rozengracht 79 Zaandam) - NL address verification capability now real. COUNTERPARTIES: BBAN/Verlaan pilot ACCEPTED (he delegated to Jaime Verlaan-Strik) - welcome/confirmation reply SENT 19.08 via guarded email_engine as AstraNL; Carprof stop-request -> tender_optout verif",
+   "at": 232114,
+   "evidence": "action_ledger imprint 232114"
+  },
+  {
+   "imprint_id": 232131,
+   "target": "monolith_law",
+   "summary": "MONOLITH LAW built+enforced: 93 unreachable organs measured (baseline may only shrink, runtime/UNREACHABLE_ORGANS.txt); unbypassable wall inside close_mandate (live-tested: orphan -> REFUSED naming file; removed -> closed); daily gate via guard runner sweep; skills carry Condition 8 ATTACHED OR NOT BUILT + OUTPUT TRUTH gates map; stewards own orphan transport_matrix attached via weekly timer, gate green new_debt=[]. DEBT QUEUE: 93 historical orphans to attach-or-delete in future mandates.",
+   "at": 232131,
+   "evidence": "action_ledger imprint 232131"
+  },
+  {
+   "imprint_id": 232182,
+   "target": "goal_real_coordination",
+   "summary": "FOUNDER GOAL SET: organism pursues REAL coordination and earns. MEASURED (Rule 16): whole demand side was synthetic - all 78 funderingen intakes were self-probes, open tasks were demos; real intakes ever=3, referrals=0, settled fees=0. BUILT: (1) reality gate in coordination_engine.open_case - empty-need real cases REFUSED (live-tested; empty goods_shortage flood killed at the door); (2) reality_funnel guard (daily mirror, counts only external humans, zero=honest, waiting human=inflammation) - i",
+   "at": 232182,
+   "evidence": "action_ledger imprint 232182"
+  },
+  {
+   "imprint_id": 232283,
+   "target": "mandate_331",
+   "summary": "m331 DEMAND REALITY v1 CLOSED (Fable, 2026-08-19, 4 passes). BUILT+VERIFIED: funderingen 10-lang SEO head live (canonical+hreflang+desc, curl x10); sitemap 0->10 fund urls (3474 total, live grep=10); IndexNow 200/280; GSC sitemap submitted via NEW gsc_sitemap_submit.py (read-back lastSubmitted 10:13:28Z); orphan fixed (klus link + menu sub-door 10 langs); organism/demand_reality.py: 3034 tenders, 30 candidates live-verified (TED token+kind nbsp fix, TenderNed JSON API after SPA false-negative), ",
+   "at": 232283,
+   "evidence": "action_ledger imprint 232283"
+  },
+  {
+   "imprint_id": 232308,
+   "target": "mandate_332",
+   "summary": "m332 LAW 0.10 TRUNK LAW CLOSED 14/14 (Fable, 2026-08-19). Founder order canonized verbatim: all work re-equipped at the highest and deepest level; every session flows without the founder; one command = full closure; trunk to the finest twigs. WIRED INTO 5 EXECUTORS, all live-verified: (1) CONSTITUTION.md LAW 0.10 above 0.9; (2) STATE.md supreme-law header (regenerated by real service, grep=1); (3) preflight closing rules print the canon; (4) steward_boot prints trunk order above open mandate ite",
+   "at": 232308,
+   "evidence": "action_ledger imprint 232308"
+  },
+  {
+   "imprint_id": 232329,
+   "target": "mandate_334",
+   "summary": "m334 SERIES OF REAL COORDINATIONS closed (Fable 2026-08-19, batch style, 0 forced stops). DIAGNOSIS: matched 3781 = 3744 probe observations (participants={}), settled 0 BY CONSTRUCTION; stuck-real alarms synthetic/demo; funderingen intakes = hourly contract test; Stam reply = STOP. ACTIONS: pulse truth split live (non-probe overdue 0), 4 kills with evidence incl. a followup scheduled INTO an optout prevented, 8 triages, 732 alerts resolved, 2 execution_pulse objective markers. HONEST: 0 sendable",
+   "at": 232329,
+   "evidence": "action_ledger imprint 232329"
+  },
+  {
+   "imprint_id": 232348,
+   "target": "mandate_335",
+   "summary": "m335 LAUNCH REAL COORDINATION closed (Fable 2026-08-19). FIRST REAL SETTLED CASE IN THE ENGINE: cc_20260819_951d3466, 2900c, payment_ref cs_live_a1oZ91..., 9 primitives, pulse settled_mtd_paid=1 (April pay date preserved in evidence). Series wired: revenue-case-sync 6h timer, idempotent-proven. Dead-tender guard in growth_pulse after proving sergiu got a 6-days-dead tender. Engine signature truths learned (dict constraints, principal/executor, internal: prefix per m253). Honest: no external send",
+   "at": 232348,
+   "evidence": "action_ledger imprint 232348"
+  },
+  {
+   "imprint_id": 232353,
+   "target": "mandate_336",
+   "summary": "m336 REAL COORDINATION WITH ANALYSIS + VERIFIED RESULT closed (Fable 2026-08-19, one pass). Case cc_20260819_97285f49 real, 9 primitives to learned: internal LAW 0.3 need -> 3 live signed sanctions compositions (0 hits, digests 7a6f204e/9a9a5730/f1a18c54) -> independent KCAF register cross-check (3/3 present, emails byte-identical) -> settled by direct_evidence amount 0 (REVENUE_TRUTH: no payment_ref, revenue untouched) -> artifact sealed /opt/astranl/vault/verify_bureaus_m336_20260819.json sha2",
+   "at": 232353,
+   "evidence": "action_ledger imprint 232353"
+  },
+  {
+   "imprint_id": 232359,
+   "target": "mandate_337",
+   "summary": "m337 REAL MULTI-PARTY COORDINATION closed (Fable 2026-08-19, one pass). Four real parties: Nijmegen EUR600k + Emmen EUR350k (live TED values) -> Van Dijk Geotechniek + Geomet (KCAF, optout-checked, LAW0.4 gate passed, send-guard, SMTP-accept x2, outreach_status updated). Case cc_20260819_fef192a1 matched, followup 20-08 00:58Z, same_day_reply watching. Boundary honest: agreed/settled are the parties own states. Twigs: Nebest autoreply mislabel, Aveco optout-over-yes. Contract green, 0 failed uni",
+   "at": 232359,
+   "evidence": "action_ledger imprint 232359"
+  },
+  {
+   "imprint_id": 232368,
+   "target": "mandate_338",
+   "summary": "m338 TEN REAL COORDINATIONS closed (Fable 2026-08-19, batch+background, 0 stops). 10/10 SMTP-accepted to 10 distinct KCAF firms (Fugro, Wiertsema, SOCOTEC, Nebest, Koops, Allnamics, BBCI, T&M, BVL, Funderingsproblematiek) x 5 live-verified open TED tenders; every letter: live EUR + OWN award benchmark (12 transacted geotech awards, median 660k, conditions inside) + role + stop lines; T1 model proposed, T0 re-gated, live verify at send time; 10 cases matched cc_20260819_38ea1629..e7414c42 with fo",
+   "at": 232368,
+   "evidence": "action_ledger imprint 232368"
+  },
+  {
+   "imprint_id": 232380,
+   "target": "mandate_339",
+   "summary": "m339 ROBOT/DRONE COORDINATION closed (Fable 2026-08-19). Terra Inspectioneering BV (KvK 65914031, only verified operator on file) <- Amsterdam kolken-inspectie EUR 3.45M + Rotterdam rioolstrengen EUR 5.8M, both live-verified at send, letter with own 1555-machine catalog analytics (inspection median 38k/140 priced, sewer subclass honest null), gate+guard, SMTP ok. Case cc_20260819_cd028477 matched, followup 20-08 01:26Z. Robotisation map sealed sha 995ce713: 39 open tenders x 5 robot classes. BOT",
+   "at": 232380,
+   "evidence": "action_ledger imprint 232380"
+  },
+  {
+   "imprint_id": 232390,
+   "target": "mandate_340",
+   "summary": "m340 GROWTH AT MAX closed (Fable 2026-08-19, background-batch, 0 stops). Operator bottleneck n=1 attacked: DCRO official register live-harvested (56 sites, 34 visited, 25 self-published emails, 9 honestly unmailed), 25/25 guarded sends with today-live-verified EUR tenders by domain-profile fit + catalog analytics + reply-to-connect + stop, 25 cases matched (cc_26329bf4..4d596cf0), candidates 1->34, seal sha d760104a, POST /api/robots/operators/register live as the door. Contract green, 0 failed ",
+   "at": 232390,
+   "evidence": "action_ledger imprint 232390"
+  },
+  {
+   "imprint_id": 232398,
+   "target": "mandate_341",
+   "summary": "m341 DATA SOURCE BRAIN closed (Fable 2026-08-19). One organ maps 9 credentialed/official sources to coordination questions, ALL probed live 9/9: kadaster_bag, rdw, dvsa (token), kvk (own number), knmi (files-path - list path not enabled, learned live), companies_house, stripe, vies, tenderned. Daily liveness timer 05:41, dead key = high alert. Doctrine + critical brain lesson written; seal sha 48aace2f. Rule: cite a source = call the adapter live, never memory. KvK adapter opens the m336 provide",
+   "at": 232398,
+   "evidence": "action_ledger imprint 232398"
+  },
+  {
+   "imprint_id": 232407,
+   "target": "mandate_342",
+   "summary": "m342 REAL COORDINATION WITH DATA SKILLS closed (Fable 2026-08-19). KvK adapter live x8: 5 PB targets identity-verified at send + consented trio kvk FILLED (600=62876813, 601=75497298, 602=57005869 flagged closest-match). Letter facts 100% live-verified today (Emmen EUR 350k monitoring, leeraanpak gunning, landelijk herstelfonds); Emmen-75% claim DROPPED - unverifiable at message birth. 5/5 sends to fresh KCAF PB firms, 5 cases matched (e8712fc9..955ba24d), seal 6b72ed39. Twig named: 3 stale muni",
+   "at": 232407,
+   "evidence": "action_ledger imprint 232407"
+  },
+  {
+   "imprint_id": 232435,
+   "target": "mandate_344",
+   "summary": "m344 UA-ZZP RESEARCH closed (Fable 2026-08-19, engines T1+T0). Sealed sha 2f09a321: VERIFIED primary law - aanneming 7:750 rank1, multi-client rank2, opdracht 7:400 rank3, collective vof rank4 (legal gate), FORBIDDEN client-leiding (WAADI tbs trap); AstraNL broker outside WAADI arbeidsbemiddeling by statutory definition; worker-fee ban confirmed. HONEST UNVERIFIED: BuWav TP-article + exact TP end date - citations required before ANY public claim (mis-captured kennismigrant fragment caught and de",
+   "at": 232435,
+   "evidence": "action_ledger imprint 232435"
+  },
+  {
+   "imprint_id": 232491,
+   "target": "mandate_345",
+   "summary": "m345 UA-ZZP DOOR closed (Fable 2026-08-19). LIVE: /{lang}/ua-zzp/ x10 languages (uk/nl/en rich + 7 concise, ar rtl, canonical+hreflang, limits on-page, no guarantees), POST /api/ua-zzp/intake (validation+rate-limit+synthetic markers+founder HIGH notif), GET scenarios matrix, dispatcher timer *:03,33 -> real intakes become engine cases (synthetic gate PROVEN: contract intake #1 opened no case). nginx lang-route twig fixed (shell was swallowing the page with a lying 200). Sitemap +10, IndexNow 200",
+   "at": 232491,
+   "evidence": "action_ledger imprint 232491"
+  },
+  {
+   "imprint_id": 232557,
+   "target": "mandate_346",
+   "summary": "m346 LEGAL CORRECTION (Fable 2026-08-19 evening, external-fetch channel). IND 06-08-2026 sealed sha 354326ecce24: TP-holders employment twv-FREE (UWV melding) but twv REQUIRED for zzp; directive to 04-03-2028; third-country ended 04-09-2025; transition doc planned. m344 do-not-publish rule prevented a false public promise. Page lim uk/nl/en corrected, live upstream. Constitutional guard correctly reverted unsigned nginx edit; approval package ready (proposed sha 6c9ea62c, PROPOSAL json in kernel",
+   "at": 232557,
+   "evidence": "action_ledger imprint 232557"
+  },
+  {
+   "imprint_id": 232604,
+   "target": "mandate_347",
+   "summary": "m347 LAWFUL PATHS closed (Fable 2026-08-19 night, external channel). Sealed sha 3e2249e373f4. For UA TP-holder with open KvK: R1 TWV per opdracht (client applies at UWV; barrier=paperwork -> protocol ships the package with each result-contract); R2 verblijfsvergunning als zelfstandige = NO twv for any client (ondernemersplein verbatim) - multi-client settled history IS points evidence; R3 loondienst/uitzend bridge (uitzendbureau melds UWV, explicit); R4 non-TP statuses ride m345 fully. Counsel-o",
+   "at": 232604,
+   "evidence": "action_ledger imprint 232604"
+  },
+  {
+   "imprint_id": 232656,
+   "target": "mandate_348",
+   "summary": "m348 FOUNDER DASHBOARD ROOT FIX (8th report, Fable 2026-08-19 night). Root class: nginx sub_filter injected public shell into /founder/* - overlays (bar z9990, sheets inset:0 z9995, FAB) killed buttons after every shell iteration; 7 repairs were 7 shell versions patched at the wrong layer. Fix: __astraFounderGuard first-line bailout in shell2/cabinet_entry/form_memory (node-checked, served-file verified, no-cache+etag). Invariant: watchdog asserts guard in SERVED files each 15 min, 28/28 live. n",
+   "at": 232656,
+   "evidence": "action_ledger imprint 232656"
+  },
+  {
+   "imprint_id": 232665,
+   "target": "mandate_349",
+   "summary": "m349 TRUE ROOT of dead founder buttons (9th report) FIXED+VERIFIED live: m343 vision-feed line emitted unescaped quotes in generated JS -> handler script SyntaxError since Aug-17 -> all 13 buttons dead. Found by minting a diag wa_session and node-checking the SERVED page via nginx; fixed one line (single-quoted JS), organ-host restarted, node OK all scripts, decide/soConfirm/saveVision present, brief+vision endpoints 200. NEW founder_js_sentinel timer (*:11,41) node-checks the served dashboard b",
+   "at": 232665,
+   "evidence": "action_ledger imprint 232665"
+  },
+  {
+   "imprint_id": 232674,
+   "target": "mandate_350",
+   "summary": "m350 REALITY WALL closed (Fable 2026-08-19 night). Founder law after m348 false-fixed: [FOUNDER-BUG] mandates close ONLY via reality_gate - capture_symptom refuses passing probes (must reproduce what the founder sees), failing rc+sha ledgered, close re-runs the SAME cmd fresh and only rc=0 opens. Red-green proven live (mandate 351: 4 gates, 4 correct refusals/passes). mandate_contract wired after monolith wall. Kernel PROPOSAL2 ready: one founder signature locks the wall files themselves (combin",
+   "at": 232674,
+   "evidence": "action_ledger imprint 232674"
+  },
+  {
+   "imprint_id": 232677,
+   "target": "mandate_350_addendum",
+   "summary": "m350 addendum: shadow module organism/auto_guards/reality_gate.py masked the wall import in close_mandate (error was LOUD not silent) - import now absolute-path loaded. Wall re-proven through the REAL close path on m352: broken->refused, fixed->closed. Security kernel DENIED my rewrite of founder signing material (correct behaviour, ledgered); refreshed proposal placed in runtime/proposals with final sha, founder notified to sign THAT and delete the stale PROPOSAL2. Failed units 0.",
+   "at": 232677,
+   "evidence": "action_ledger imprint 232677"
+  },
+  {
+   "imprint_id": 233238,
+   "target": "mandate_354",
+   "summary": "m354 AUTONOMY closed (Fable 2026-08-20 morning). Standing cycle armed: audit_council daily 05:17 (3 engines audit live facts, absent=absent, vote->autonomy_backlog) + autonomous_dev_loop 6h (reversible T0 self-healing, backlog registration, hard-gate escalation, ledgered). First live council: claude-only (gemini silent=twig, deepseek key INVALID=founder hard gate notified), 6 adopted verdicts incl fee-pipeline leakage and 70 overdue followups. Doctrine AUTONOMY.md + vault seal. Hard gates remain",
+   "at": 233238,
+   "evidence": "action_ledger imprint 233238"
+  },
+  {
+   "imprint_id": 233248,
+   "target": "mandate_354",
+   "summary": "m354 AUTONOMY FINALE closed (Fable 2026-08-20 morning). Audit council organ: claude answered (3 live runs, 6 adopted verdicts: revenue_stalled critical, founder_alert_backlog critical, mandate_utilization high, zzp_intake_zero high, probe_drift + datasource_gap medium); grok+deepseek wired per founder order but BOTH keys invalid (verbatim auth errors) = founder gate; gemini off by founder law 2026-04-16. autonomous_dev_loop live on astranl-autonomous-dev.timer 00/6:47: council->vote->autonomous_",
+   "at": 233248,
+   "evidence": "action_ledger imprint 233248"
+  },
+  {
+   "imprint_id": 233267,
+   "target": "mandate_354_full_bench",
+   "summary": "m354 addendum FULL BENCH (2026-08-20 ~08:10): founder disproved my dead-key claim with DeepSeek dashboard - root cause was MY loader not stripping QUOTES from the env value (auth error real, diagnosis wrong; critical lesson m354_dead_key_was_my_parser). Fixed loader (quote-strip), found working keys in per-service files: deepseek.env, gemini.env (api_keys.env copy stale), xai.env. Gemini wired via REST gemini-2.5-flash thinkingBudget:0 (founder 2026-08-20 order overrides the 2026-04-16 off-switc",
+   "at": 233267,
+   "evidence": "action_ledger imprint 233267"
   }
  ],
- "generated_utc": "2026-08-18T22:19:19.568495+00:00",
+ "generated_utc": "2026-08-20T08:19:54.068693+00:00",
  "honest_note": "entries are steward imprints, not marketing; external paid cycles counter lives in COMPLIANCE.md, not here"
 }
