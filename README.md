@@ -9,8 +9,8 @@ Flat per-task pricing €0.005-€0.05 (up to 65% cheaper than Claude Opus singl
 ## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-08-21)
 
 - **API version:** v4.0
-- **OpenAPI paths exposed:** 963
-- **MCP tools advertised:** 32
+- **OpenAPI paths exposed:** 977
+- **MCP tools advertised:** 71
 - **Dispatchable task classes:** 29
 - **Listed on canonical [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=astranl):** 10 version(s)
 - **Listed on Smithery:** ✗
@@ -56,7 +56,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 ## Discovery
 
 - A2A agent card: https://astranl.com/.well-known/agent.json
-- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (963 paths)
+- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (977 paths)
 - Public docs: https://astranl.com/docs
 - Federation node: https://astranl.com/.well-known/astranl-node.json
 
