@@ -4,20 +4,15 @@
 
 AstraNL MCP Server — verified human hands for AI agents.
 
-An agent opens an errand in the PHYSICAL world (inspect a car before purchase,
-view a property, collect or deliver an item, verify something on site). The
-proof criterion is agreed BEFORE the work; Stripe holds the budget; a
-register-verified executor delivers the proof; the principal confirms and only
-then is the money captured. AstraNL brokers at a published fee and never holds
-funds. This is not insurance.
+AstraNL turns an intent into verified real-world execution: a register-verified person performs the errand and the money stays held until the principal confirms the proof agreed before the work.
 
-Ordering is open worldwide. Execution happens where a register-verified
-executor stands — today the Netherlands (KvK). No country is claimed before an
-executor stands in it.
+Money: broker; custody never - Stripe holds, principal confirms, executor is paid directly; an unconfirmed hold auto-releases after 7 days. This is not insurance.
 
-Public capabilities: `astranl_execute`, `astranl_procure`, `astranl_verify`,
-`astranl_find`, `astranl_coordinate` (plus `search`, `fetch` and
-`compose_parts_basket`).
+Geography: ordering open to a principal anywhere; execution Netherlands, where register-verified (KvK) executors stand. a country is listed the day a register-verified executor stands in it, never before.
+
+Public capabilities: `astranl_execute`, `astranl_procure`, `astranl_verify`, `astranl_find`, `astranl_coordinate`, `search`, `fetch`, `compose_parts_basket`.
+
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-08-23T16:22:22.452685+00:00).
 
 ## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-08-23)
 
