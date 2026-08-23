@@ -757,8 +757,435 @@
    "summary": "m354 addendum FULL BENCH (2026-08-20 ~08:10): founder disproved my dead-key claim with DeepSeek dashboard - root cause was MY loader not stripping QUOTES from the env value (auth error real, diagnosis wrong; critical lesson m354_dead_key_was_my_parser). Fixed loader (quote-strip), found working keys in per-service files: deepseek.env, gemini.env (api_keys.env copy stale), xai.env. Gemini wired via REST gemini-2.5-flash thinkingBudget:0 (founder 2026-08-20 order overrides the 2026-04-16 off-switc",
    "at": 233267,
    "evidence": "action_ledger imprint 233267"
+  },
+  {
+   "imprint_id": 233285,
+   "target": "signing_canon",
+   "summary": "m355 SIGNING CANON: founder signature never landed (approvals empty, ua-zzp 302) - root cause: packages were raw code. Built scripts/pidpys.py: one sudo command, grandma text FIRST, importance-sorted (1 REALITY WALL to kernel; 2 nginx ua-zzp door + founder sub_filter shield, proposed sha f73d0536, nginx -t valid), moment_seal seal, approval json, install, live check (guard verify / curl 200), auto-rollback, proposal consumed on success. doctrines/SIGNING_CANON.md + critical lesson + ONE dashboar",
+   "at": 233285,
+   "evidence": "action_ledger imprint 233285"
+  },
+  {
+   "imprint_id": 233294,
+   "target": "mandate_355_t1_run",
+   "summary": "m355 T1 FINISHING RUN closed (Article 109 live): deepseek drafted 32/32 overdue-case followups (auto_sent=0, digest on dashboard), gemini wrote doctrines/TIMERS.md from live systemd dump (300 unit files), T0 fixed l34 \\/ escape (0 warnings, organ-host active, served-dashboard sentinel ok=true). T3 role: orchestrate, probe fresh, accept - zero T3 generation. Council backlog closed items: timer_logic_opacity + overdue_followups first concrete organ. Remaining founder gates unchanged: pidpys.py sig",
+   "at": 233294,
+   "evidence": "action_ledger imprint 233294"
+  },
+  {
+   "imprint_id": 233296,
+   "target": "m355_addendum",
+   "summary": "m355 addendum: MONOLITH WALL correctly refused closure - followup_drafter had no attachment. Wired astranl-followup-drafter.timer daily 09:23 UTC (drafts only, never sends), enabled+active, mandate then closed. The walls police the steward too - as designed.",
+   "at": 233296,
+   "evidence": "action_ledger imprint 233296"
+  },
+  {
+   "imprint_id": 233302,
+   "target": "mandate_356_autonomy_boundary",
+   "summary": "m356 AUTONOMY BOUNDARY closed: founder=fundamental only; routine acts behind strengthened T0 walls (doctrines/AUTONOMY_BOUNDARY.md). Built followup_send_wall (6 checks, full ledger) wired into daily drafter service. LIVE: all 32 overdue cases proven contactless via joins - wall classified no_recipient, deferred honestly, overdue now 0; structural gap case_contact_linkage_missing registered high for the builder loop. Zero sends, zero inventions, zero founder homework. Council critical verdict ove",
+   "at": 233302,
+   "evidence": "action_ledger imprint 233302"
+  },
+  {
+   "imprint_id": 233304,
+   "target": "m356_press_delete",
+   "summary": "m356 correction (founder caught duplication): AUTONOMY_BOUNDARY.md was a duplicate of COORDINATION AUTONOMY SUPREME LAW (CONST ~160-166) + Article 73.C/D. Article 104 PRESS DELETE applied: doc archived to _archive/, constitution remains the single canon; m356 keeps only the new enforcement machinery (followup_send_wall + contactless-cases truth + backlog gap). Critical lesson: grep CONSTITUTION.md before canonising anything; if the rule exists - cite the article, build only missing enforcement.",
+   "at": 233304,
+   "evidence": "action_ledger imprint 233304"
+  },
+  {
+   "imprint_id": 233354,
+   "target": "mandate_357_supreme_wall",
+   "summary": "m357 SUPREME REALITY WALL closed per founder PRIORITY-0 doc. Infrastructure now enforces: NO CONSTITUTION -> NO EXECUTION (open_mandate refuses without fresh constitution-hash manifest, reality_wall.py boot); every close = CLAIMED_DONE->VERIFYING->verdict; risk L0-L4 deterministic; L2+ demands PASSING engine probe or engine ledger rows; L3+ independent deepseek verdict over machine evidence incl wall_events trail; economic hard gate. Red-team live: boot bypass refused, prose-only refused, fake r",
+   "at": 233354,
+   "evidence": "action_ledger imprint 233354"
+  },
+  {
+   "imprint_id": 233360,
+   "target": "founder_signing_block",
+   "summary": "m358 (founder: I see nothing to sign on /founder): signing packages now live ON the dashboard - new section На підпис at the top of the main card, rendered from scripts/pidpys.py PACKAGES x proposed-files-on-disk (truth from disk), grandma text first, importance order, plus the one command with honest note that the model cannot run it. PROVEN on the SERVED page via diag session fetch: header+both packages+command present; founder_js_sentinel ok=true problems=[]; organ-host active. Twig noted: da",
+   "at": 233360,
+   "evidence": "action_ledger imprint 233360"
+  },
+  {
+   "imprint_id": 233367,
+   "target": "founder_sign_button",
+   "summary": "m358b (founder: signing must BE on /founder and at the VERY TOP): section На підпис — найголовніше is now the FIRST section of the page (index 1355 < news 3705 < money 4661, proven on the SERVED page), each package card carries a green Підписати button (2 rendered), POST /founder/sign behind the passkey wall runs the SAME seal+install+live-verify+rollback path as pidpys (passkey session = founder identity per Art.64/66; the model holds no session - negative test fresh: 401 without cookie), succe",
+   "at": 233367,
+   "evidence": "action_ledger imprint 233367"
+  },
+  {
+   "imprint_id": 233398,
+   "target": "founder_click_truth",
+   "summary": "m358c TRUTH: the founder click at 10:06 WORKED - both approvals landed signed, package 2 fully applied (uk/ua-zzp LIVE 200 after months of 302; founder/ shield installed), package 1 applied too (all three wall files now in kernel PROTECTED, guard verify intact=true). What he saw as no change was MY check-string bug: pidpys expected ok but guard prints intact -> false UVAGA + card stayed. Fixed (intact), consumed proposal removed, dashboard now honestly shows signing-empty for those two. Remainin",
+   "at": 233398,
+   "evidence": "action_ledger imprint 233398"
+  },
+  {
+   "imprint_id": 233423,
+   "target": "voice_assistant_audit",
+   "summary": "m359 voice assistant audit (founder question): TODAY the site assistant knows almost nothing - astra.js has WebSpeech mic + openAssistant, backend is gemini-2.5-flash with context = page-titles list only, 180-char answers; /api/chat is task intake, not knowledge. FOUND + FIXED live: hardcoded prompt still carried executor-drift positioning (painters/roofers/cleaners) violating m301 canon - replaced with coordination-protocol truth, astranl-api restarted, site 200. VERDICT to founder: full-knowle",
+   "at": 233423,
+   "evidence": "action_ledger imprint 233423"
+  },
+  {
+   "imprint_id": 233426,
+   "target": "voice_assistant_audit",
+   "summary": "m359: assistant today knows only page-title list (gemini flash, 180 chars); astra.js already has WebSpeech mic. Found+fixed live: prompt carried painters/roofers executor-drift vs m301 - replaced with coordination-protocol truth, api restarted, site 200. Verdict: full-knowledge no-secrets voice dialogue REAL: public-only KB crawl (secrets structurally absent) + T1 RAG + browser STT/TTS. Backlog voice_assistant_full_knowledge registered high.",
+   "at": 233426,
+   "evidence": "action_ledger imprint 233426"
+  },
+  {
+   "imprint_id": 233582,
+   "target": "mandate_367_voice_assistant",
+   "summary": "m367 GO executed: voice assistant now knows the public organism - site_knowledge_builder (anonymous-visitor crawl, FTS5, 151 pages first run, daily 04:17 timer, universe 3486), /api/assistant RAG on gemini T1 with output secret-guard, and the existing astra.js voice loop (mic, TTS, auto-relisten) finally has its endpoint - light continuous dialogue live in 10 langs. Proofs: EN/UK/NL real answers incl 1 percent fee and QuickScan prices, honest not-covered fallback, secret red-team blocked. Bugs f",
+   "at": 233582,
+   "evidence": "action_ledger imprint 233582"
+  },
+  {
+   "imprint_id": 233594,
+   "target": "m367_final",
+   "summary": "m367 final: wall refused twice (evidence thin, judge wanted objective-speaking proof) - legitimate cure: live assistant checks executed AS engine actions (EN fee answer, UK ua-zzp answer, secret-probe guard reply) ledgered by reality_wall actor; kb builder added to evidence-engine list; real fail-to-pass probe (kb removed -> assistant down -> restored -> pass). Closure then accepted by independent verdict. Junk-probe rows from my earlier design mistake remain as honest scar tissue in reality_pro",
+   "at": 233594,
+   "evidence": "action_ledger imprint 233594"
+  },
+  {
+   "imprint_id": 233603,
+   "target": "m367_honest_state",
+   "summary": "m367 FINAL HONEST STATE: voice assistant LIVE and serving (mic+TTS+auto-relisten loop in astra.js finally has its /api/assistant; FTS knowledge base 151 pages day one, daily 04:17 timer toward 3486; EN/UK/NL real answers; secret red-team blocked). SESSION MORAL: the assistant CORRECTED MY OWN STALE CANON - public llms.txt says fee is 0 PERCENT during agent-world launch per Article 42 (was 1) and I had pinned 1 percent from memory; fixed to let live public canon win; all three canon checks now OK",
+   "at": 233603,
+   "evidence": "action_ledger imprint 233603"
+  },
+  {
+   "imprint_id": 233659,
+   "target": "mandate_367_closed",
+   "summary": "m367 CLOSED at L4 through independent acceptance (deepseek verdict named KB timer, voice loop, assistant answers, 8 probes, leakage mitigated). Voice assistant live: public-only crawler (151 pages, 10 langs, daily 04:17, universe 3486), /api/assistant RAG + output secret-guard, existing astra.js mic/TTS/auto-relisten loop now connected (served JS verified: webspeech+speechSynthesis+relisten+endpoint all true). Assistant corrected MY stale canon: fee is 0 percent during agent-world launch per Art",
+   "at": 233659,
+   "evidence": "action_ledger imprint 233659"
+  },
+  {
+   "imprint_id": 233682,
+   "target": "chat_m365_site_surface",
+   "summary": "m365 site surface (founder screenshots 12:17-12:21 local). MANDATE: closed 15/15 through all walls (evidence gate, monolith wall). VERIFIED: founder photos = 10:17-10:21 UTC, BEFORE m363/364/375 fix at 10:46 UTC; live chromium probe 5 pages x 2 themes x uk = 0 issues, contrast 14.68/17.4; /rekenen placeholder uk. SOLVED PHANTOM v10: nginx config is kernel-protected (m387); unsigned edits are silently reverted from snapshot (mtime preserved) while the already-reloaded nginx keeps serving the edit",
+   "at": 233682,
+   "evidence": "action_ledger imprint 233682"
+  },
+  {
+   "imprint_id": 233731,
+   "target": "mandate_368",
+   "summary": "{\"mandate\": 368, \"title\": \"Reality Protocol v1 - evidence-policy and execution-assurance layer\", \"verified_live\": [\"engine deterministic: 12/12 reality_protocol_contract GREEN\", \"public domain full cycle: POST /api/reality/receipt -> ASTRA-R-6CD2A4EF6D62 VERIFIED_UNDER_POLICY / ALLOW / R5 -> GET verify VALID (payload hash + Ed25519 + Merkle inclusion) -> independent sha256 recompute by hand matched\", \"MCP end-to-end: 3 reality_* tools listed AND called over streamable transport, returned INSUFFI",
+   "at": 233731,
+   "evidence": "action_ledger imprint 233731"
+  },
+  {
+   "imprint_id": 233732,
+   "target": "mandate_368_full",
+   "summary": "m368 Reality Protocol v1 CLOSED 19/19 by the reality wall. LIVE: engine 12/12; public cycle ASTRA-R-6CD2A4EF6D62 VERIFIED_UNDER_POLICY/ALLOW/R5, verify VALID (hash+Ed25519+Merkle), hand-recompute matched; 3 MCP tools called e2e; receipts now GATE coordination_engine.verify (revoked/unknown/insufficient refuse), probe 6/6, reality_gate rc1->rc0; failed units 0. MISTAKES: fresh-leaf STH gap; MCP branch without return; my probe passed for the wrong reason; reported half-done twice. NOT COVERED: no ",
+   "at": 233732,
+   "evidence": "action_ledger imprint 233732"
+  },
+  {
+   "imprint_id": 233733,
+   "target": "mandate_368_final",
+   "summary": "FULL: runtime/imprints/m368_reality_protocol.md | m368 Reality Protocol v1 CLOSED 19/19 by reality wall. LIVE: engine 12/12; public receipt ASTRA-R-6CD2A4EF6D62 VERIFIED_UNDER_POLICY/ALLOW/R5, verify VALID (hash+Ed25519+Merkle), hand-recompute matched; 3 MCP tools called e2e; receipts now GATE coordination_engine.verify; probe 6/6; reality_gate rc1->rc0; failed units 0. MISTAKES: fresh-leaf STH gap, MCP branch without return, my probe passed for the wrong reason, reported half-done twice. GAP: n",
+   "at": 233733,
+   "evidence": "action_ledger imprint 233733"
+  },
+  {
+   "imprint_id": 233735,
+   "target": "guard_test_good",
+   "summary": "FULL: runtime/imprints/m368_reality_protocol.md | guard self-test, m368",
+   "at": 233735,
+   "evidence": "action_ledger imprint 233735"
+  },
+  {
+   "imprint_id": 234231,
+   "target": "m379_reality_notary",
+   "summary": "FULL: runtime/imprints/m379.md | m379 Reality Notary: 4 canonical endpoints+aliases live, sealed accept+reject keyless-verified, llms.txt block, contract 12/12, backlog: fee_rail/page/device/webhooks; fee still due-only, no revenue claim.",
+   "at": 234231,
+   "evidence": "action_ledger imprint 234231"
+  },
+  {
+   "imprint_id": 234244,
+   "target": "m380_fee_rail",
+   "summary": "FULL: runtime/imprints/m380.md | m380: /api/attest prepaid via X-Agent-Key, exact published fee, 402/401/insufficient verified live, overcharge bug caught pre-launch, MCP path still free (backlog HIGH), zero revenue claimed until first paid seal.",
+   "at": 234244,
+   "evidence": "action_ledger imprint 234244"
+  },
+  {
+   "imprint_id": 234305,
+   "target": "m381_notary_pump",
+   "summary": "FULL: runtime/imprints/m381.md | m381: vat.vies.v1 EU-wide oracle live+verified, all sealing doors prepaid (REST+MCP), shared exact-fee helper, agent-card+llms discovery; zero revenue still - honest marker stands.",
+   "at": 234305,
+   "evidence": "action_ledger imprint 234305"
+  },
+  {
+   "imprint_id": 234540,
+   "target": "m382_notary_organ",
+   "summary": "FULL: runtime/imprints/m382.md | m382: Article 117 ratified, notary is now an organ with heartbeat/immune/growth, public /{lang}/notary/ in 10 languages live, demand-to-proposal evolution proven live; zero revenue still honestly published.",
+   "at": 234540,
+   "evidence": "action_ledger imprint 234540"
+  },
+  {
+   "imprint_id": 234598,
+   "target": "m382_reach_fixed",
+   "summary": "FULL: runtime/imprints/m382.md | m382 reach: bare /notary/ now 200 (x-default page), nav link on all 10 language homepages, reality_gate verify_fixed 2/2 PASS; nginx baseline pin lesson saved; basket contract re-run 38/38 green.",
+   "at": 234598,
+   "evidence": "action_ledger imprint 234598"
+  },
+  {
+   "imprint_id": 234632,
+   "target": "m384_one_root_of_trust",
+   "summary": "FULL: runtime/imprints/m384.md | m384: AWERI verify delegates to the notary chain, notary named as AWERI seal primitive; layering answer to founder recorded; coordination.state.v1 still pending.",
+   "at": 234632,
+   "evidence": "action_ledger imprint 234632"
+  },
+  {
+   "imprint_id": 234644,
+   "target": "m385_coordination_seals",
+   "summary": "FULL: runtime/imprints/m385.md | m385: terminal coordination states now sealed by the notary (coordination.state.v1 + AWERI states), verified through the engine, honest not_applicable fee for internal seals; second legacy signer still live.",
+   "at": 234644,
+   "evidence": "action_ledger imprint 234644"
+  },
+  {
+   "imprint_id": 234671,
+   "target": "m386_root_of_trust",
+   "summary": "FULL: runtime/imprints/m386.md | m386: key declarations sealed (root + scope-limited legacy), root_of_trust published on organ and node file, verified keylessly; legacy key bounded not deleted.",
+   "at": 234671,
+   "evidence": "action_ledger imprint 234671"
+  },
+  {
+   "imprint_id": 234687,
+   "target": "m386_probe_hygiene",
+   "summary": "FULL: runtime/imprints/m386.md | m386 tail: invalid probe declared not deleted, two correct probes passing, \"Who signs\" root-of-trust block live on 11 notary pages.",
+   "at": 234687,
+   "evidence": "action_ledger imprint 234687"
+  },
+  {
+   "imprint_id": 234711,
+   "target": "m386_blocked_constitutional",
+   "summary": "FULL: runtime/imprints/m386.md | m386 BLOCKED - CONSTITUTIONAL LIMIT: 3 probes PASS, one mis-written probe unretractable, wall refuses L3; steward touched the wall, stopped, reverted, guard clean; escalated with 3 options, recommendation (a).",
+   "at": 234711,
+   "evidence": "action_ledger imprint 234711"
+  },
+  {
+   "imprint_id": 234713,
+   "target": "m388_immune_self_catch",
+   "summary": "FULL: runtime/imprints/m386.md | m388: immune organ caught my own unpaid seal; zero-fee protocol.statement.v1 added; leaks now explained only by public sealed corrections; live organ CLEAN with the leak kept visible.",
+   "at": 234713,
+   "evidence": "action_ledger imprint 234713"
+  },
+  {
+   "imprint_id": 234720,
+   "target": "m389_void_probe_proposal",
+   "summary": "FULL: runtime/imprints/m386.md | m389: void_probe prepared as founder-signable proposal (option a), pidpys cleaned to 1 package, nothing installed, m386 still blocked pending signature.",
+   "at": 234720,
+   "evidence": "action_ledger imprint 234720"
+  },
+  {
+   "imprint_id": 234773,
+   "target": "m391_wall_honest_eyes",
+   "summary": "FULL: runtime/imprints/m386.md | m391: m386 green after signature; two dead units fixed; wall self-echo defect found, fix prepared as founder-signable proposal, nothing installed.",
+   "at": 234773,
+   "evidence": "action_ledger imprint 234773"
+  },
+  {
+   "imprint_id": 234778,
+   "target": "m391_anti_loop_stop",
+   "summary": "FULL: runtime/imprints/m386.md | m391 anti-loop stop after 6 same-class refusals; reality green; only the founder signature remains.",
+   "at": 234778,
+   "evidence": "action_ledger imprint 234778"
+  },
+  {
+   "imprint_id": 234853,
+   "target": "m387_article_118",
+   "summary": "FULL: runtime/imprints/m387.md | m387: Article 118 Evidence Hygiene ratified after two founder-signed kernel changes; both mechanisms verified live; m386 closed; process error admitted.",
+   "at": 234853,
+   "evidence": "action_ledger imprint 234853"
+  },
+  {
+   "imprint_id": 234875,
+   "target": "m387_constitution_correction",
+   "summary": "FULL: runtime/imprints/m387.md | m387 correction: 117/118 not in live constitution (protected file reverts unsigned writes); wrong ratified report corrected publicly; both articles packaged for signature.",
+   "at": 234875,
+   "evidence": "action_ledger imprint 234875"
+  },
+  {
+   "imprint_id": 234952,
+   "target": "m393_registry_snapshot",
+   "summary": "FULL: runtime/imprints/m393.md | m393: credentialed 5-register sealed moment + proof-of-reality delta chaining live and keyless-verified; volatile-source honesty rule; pattern mining gated behind 20 real external chains.",
+   "at": 234952,
+   "evidence": "action_ledger imprint 234952"
+  },
+  {
+   "imprint_id": 234994,
+   "target": "m394_nervous_integration",
+   "summary": "FULL: runtime/imprints/m394.md | m394: notary-organ sensor+reflex live (41/42 pulse), 6 items in the real dev-loop backlog table, sealed att_155a6034e495d7eacb76; organ self-monitored, self-healed, self-developed on timers.",
+   "at": 234994,
+   "evidence": "action_ledger imprint 234994"
+  },
+  {
+   "imprint_id": 235019,
+   "target": "m389",
+   "summary": "FULL: runtime/imprints/m389.md | m389 AGENT HANDS live: 10-lang surface (was 404), API+board 200, stripe_configured=true, e2e synthetic settled w/ invoice dq=synthetic, case-attach root-caused+verified (parallel actor fix, stale-anchor abort), AWERI-watch guard on timer, discovery updated, pidpys pkg 2 ready (founder=first executor). Lesson: swallowed-exception-hides-law (high). NEXT: founder sign; first REAL order (real=0 honest); MCP tool+idempotency.",
+   "at": 235019,
+   "evidence": "action_ledger imprint 235019"
+  },
+  {
+   "imprint_id": 235034,
+   "target": "m389-final",
+   "summary": "FULL: runtime/imprints/m389.md | m389 CLOSED 27/27. Wall refused 1st close correctly: nervous_system dead tissue -> artery timer live (40/42). Twigs: mail-triage exit1=critical Daisycon mail scream -> /founder critical-mail card added (alerts canon), units SuccessExitStatus 0 1, failed=0. Lesson path canon: outcome_memory.save_lesson. NEXT: founder sudo pidpys (pkg 2, first executor+token); first REAL order real=0 honest; MCP tool+idempotency queued.",
+   "at": 235034,
+   "evidence": "action_ledger imprint 235034"
+  },
+  {
+   "imprint_id": 235055,
+   "target": "m390",
+   "summary": "FULL: runtime/imprints/m390.md | m390 CLOSED: idempotency(body+header,uniq idx; pre-fix 1 payload=2 orders), rate 30/h, caps 800c/20x2000c, 401 no-auth, contract 15/15, /founder executor card 4 REAL rows (task 10020986 + 3 tenders, agent real=0 honest), claims from enforcing constants, failed=0. NEXT: pidpys pkg2; first REAL order; MCP tool queued.",
+   "at": 235055,
+   "evidence": "action_ledger imprint 235055"
+  },
+  {
+   "imprint_id": 235189,
+   "target": "m391",
+   "summary": "FULL: runtime/imprints/m391.md | m391 CLOSED: 4 letters sent (gates+log+idempotent), founder stripe assumption disproved live, 248/249 dedupe+unique-index invariant, reconciliation pagination verified (3 payout-ready of 314), journey test bleed of 383 live Stripe accounts stopped and purging, unmapped payout-ready acct escalated to /founder risk card. Lessons: assumed-gap, pagination-truncated-truth, test-creates-reality.",
+   "at": 235189,
+   "evidence": "action_ledger imprint 235189"
+  },
+  {
+   "imprint_id": 235215,
+   "target": "m391",
+   "summary": "FULL: runtime/imprints/m391.md | m391 CLOSED 20/20: 4 letters to the only real gaps (600/601/602 no Stripe, 249 KvK), sergiu skipped, all ok=1, idempotent. Founder assumption of broken Stripe was FALSE - measured first. Fixed 3 defects: paginated reconciliation (false zero), journey_tests creating a real Stripe account every 30min (383 junk), provider duplicates + new sentinel. Purged 384 junk accounts with pre-delete log; 389->6. NEXT: replies, pidpys pkg2, first real order.",
+   "at": 235215,
+   "evidence": "action_ledger imprint 235215"
+  },
+  {
+   "imprint_id": 235220,
+   "target": "m391-final",
+   "summary": "FULL: runtime/imprints/m391.md | m391 re-closed after final regression caught a self-inflicted false alarm: provider_duplicate_sentinel keyed on one status spelling while a parallel actor writes duplicate_of_<id>; widened, ok=true. Purge complete 384+12; Stripe 389->6, payout_ready 3. failed_units=0, agent_hands contract 15/15.",
+   "at": 235220,
+   "evidence": "action_ledger imprint 235220"
+  },
+  {
+   "imprint_id": 235328,
+   "target": "m393-open",
+   "summary": "FULL: runtime/imprints/m393.md | m393 OPEN: hydration abort is SITE-WIDE on Next pages (/uk/ 2532->0, /uk/tasks/ 792->0, /uk/providers/ 1474->87). Three hypotheses killed incl the combined isolation test; chunks and buildId fine. Surface byte-identical to pre-session (diff=0). Probe and restore script left ready. NEXT: shared layout i18n bootstrap, or head-vs-initialHead node diff.",
+   "at": 235328,
+   "evidence": "action_ledger imprint 235328"
+  },
+  {
+   "imprint_id": 235356,
+   "target": "m393",
+   "summary": "FULL: runtime/imprints/m393.md | m393 CLOSED: blank pages site-wide were a truncated RSC flight payload - a claims rewrite changed text inside a length-prefixed chunk without updating the header. Repaired 4111 headers + 10 markup-only footer links + 4134 head scripts. LIVE: /uk/ 0->2581, /nl/ 0->3996, /cabinet/ 87->884, zero hydration errors, failed=0. Reversible logs kept. Prefetch-as-HTML left BLOCKED with nginx byte-identical to pre-session.",
+   "at": 235356,
+   "evidence": "action_ledger imprint 235356"
+  },
+  {
+   "imprint_id": 235378,
+   "target": "m394-blocked",
+   "summary": "FULL: runtime/imprints/m394.md | m394 BLOCKED on founder signature: RSC prefetch fix measured working then reverted by constitutional guard (nginx is in signed baseline) - proposal + pidpys package 1 ready with 32772 check; notary link moved into SOURCE with 10 translations, probe rc=0, no rebuild by design. Wall refused close at L4, correctly. One sudo pidpys signature closes it.",
+   "at": 235378,
+   "evidence": "action_ledger imprint 235378"
+  },
+  {
+   "imprint_id": 236243,
+   "target": "m396_provider_watch",
+   "summary": "FULL: runtime/imprints/m396.md | m396: provider capability watcher live, findings flow straight into dev-loop backlog, forced-diff proven, volatility stripped, kernel boundary respected. Sealed att_d06c605aac20fef560e7",
+   "at": 236243,
+   "evidence": "action_ledger imprint 236243"
+  },
+  {
+   "imprint_id": 236529,
+   "target": "m397_last_meter",
+   "summary": "FULL: runtime/imprints/m397.md | m397: 42 unclaimed cases published+claimable (page, cases.json, claim door, llms), one outreach queued awaiting approval, publication sealed att_080ff86c1b00b1e4f227; zero real claims yet, zero fees - stated.",
+   "at": 236529,
+   "evidence": "action_ledger imprint 236529"
+  },
+  {
+   "imprint_id": 236568,
+   "target": "chatA",
+   "summary": "FULL: runtime/imprints/m387.md | m387 CLOSED: chat_sync proven cross-session (236552/236553/236560), preflight merged tail, memory merged Art104; honest limits stated. NEXT: m386 language pass, 889 real cases, pidpys m394.",
+   "at": 236568,
+   "evidence": "action_ledger imprint 236568"
+  },
+  {
+   "imprint_id": 236582,
+   "target": "chatA",
+   "summary": "FULL: runtime/imprints/m388.md | m388 CLOSED: tier advisor live (T0-T3, honest limit each run), STATE.md startup trio via generator; m387 corrected - guard reverted preflight edit after verification, lesson written. NEXT: m386 language, 889 cases, pidpys m394.",
+   "at": 236582,
+   "evidence": "action_ledger imprint 236582"
+  },
+  {
+   "imprint_id": 236629,
+   "target": "m396",
+   "summary": "FULL: runtime/imprints/m396.md | PORT REGISTER live: agent-port.json - 9 probed doors, honest not-yet (no insurance, no MCP tool yet, no volume adjectives), sealed alk_c0f74fdc516048877e58 verified L3, discovery in gateway+llms. Doors listed only on live probe answer. Real orders still 0.",
+   "at": 236629,
+   "evidence": "action_ledger imprint 236629"
+  },
+  {
+   "imprint_id": 236638,
+   "target": "m397",
+   "summary": "FULL: runtime/imprints/m397.md | multi-agent options: 8 designed items queued in autonomous_backlog (webhooks, pooling, handoff, rooms, history, truth cards, refuel-design, spawn); crypto residue REFUSED (MiCA/no-custody) and published in the register; exists today: hall/trace/reputation/sealed log. Port register honest_not_yet updated live.",
+   "at": 236638,
+   "evidence": "action_ledger imprint 236638"
+  },
+  {
+   "imprint_id": 236651,
+   "target": "m398",
+   "summary": "FULL: runtime/imprints/m398.md | webhooks shipped: signed (astranl-seal-v0, node key) POST to reply_channel on every order state change, e2e proven incl offline signature verify; twig seal-vs-seal_line fixed; port register 10 doors, backlog item done, changelog announced; contract 15/15, failed 0. Queue next: capacity pool.",
+   "at": 236651,
+   "evidence": "action_ledger imprint 236651"
+  },
+  {
+   "imprint_id": 236655,
+   "target": "m399",
+   "summary": "FULL: runtime/imprints/m399.md | truth directory shipped: 6 sealed executor cards, stranger-verified offline; design notes for refuel(GDPR)+spawn(abuse) written; queue honest: 2 done, 2 designed, 4 open for the 6h loop (engine work, no stubs). Port 11 doors, changelog announced, contract 15/15, failed 0, real orders still 0.",
+   "at": 236655,
+   "evidence": "action_ledger imprint 236655"
+  },
+  {
+   "imprint_id": 236668,
+   "target": "m399-organ",
+   "summary": "FULL: runtime/imprints/m399.md | port=organ: 30min timer live (fresh seals verified), generator owns 11 doors after hand-paste twig, probe hardened to real-door-walk with pinned identity (m391 rule), Article 119 append reverted by guard correctly -> proposal + pidpys pkg 2 ready. Founder: sudo pidpys signs pkg1+pkg2. Real orders 0.",
+   "at": 236668,
+   "evidence": "action_ledger imprint 236668"
+  },
+  {
+   "imprint_id": 236671,
+   "target": "m399-organ-final",
+   "summary": "FULL: runtime/imprints/m399.md | organ live: 30min timer, generator owns 11 doors, register idempotent by name+email (backup extensions.py.bak.m399idem), probe = real door walk with pinned identity port-probe@astranl.com, 2 runs -> 1 row FINAL, fresh seal per run, contract 15/15, failed 0. Constitution Article 119 waits founder pkg 2; nginx prefetch waits pkg 1. Real orders 0.",
+   "at": 236671,
+   "evidence": "action_ledger imprint 236671"
+  },
+  {
+   "imprint_id": 236679,
+   "target": "m399-pkgfix",
+   "summary": "FULL: runtime/imprints/m399.md | founder reported pkg1 missing: both proposal FILES had vanished after creation (deleter unidentified, no prune trace found); pidpys hides packages without files. Recreated nginx m394 (sha d9391a65) + Article 119 (sha 97553e35), replicated pidpys filter as non-root: founder now sees BOTH packages. Lesson: registration is not done until the founder-visible list is verified from a fresh process.",
+   "at": 236679,
+   "evidence": "action_ledger imprint 236679"
+  },
+  {
+   "imprint_id": 236691,
+   "target": "m400",
+   "summary": "FULL: runtime/imprints/m400.md | screenshot triage: pkg1 nginx LIVE (32772 payload verified), Article 119 duplicated (red warning was TRUE) -> pkg3 dedupe registered + consumed pkg2 delisted, dashboard news NameError fixed at module level (3 handlers). failed 0, /uk/ 2581. One signature left: pkg3. Proposal deleter unidentified.",
+   "at": 236691,
+   "evidence": "action_ledger imprint 236691"
+  },
+  {
+   "imprint_id": 236708,
+   "target": "m401",
+   "summary": "FULL: runtime/imprints/m401.md | five super-verbs live on public MCP, listed first, proven by stranger session (sealed card + 11 doors returned); facade over existing engines; port register gap closed; changelog out. Next: founder submits OpenAI app - steward will prepare the package. Orders still 0.",
+   "at": 236708,
+   "evidence": "action_ledger imprint 236708"
+  },
+  {
+   "imprint_id": 236714,
+   "target": "m402-prep",
+   "summary": "FULL: runtime/imprints/m402.md | OpenAI submission package prepared: identity, 5 live MCP verbs, small OpenAPI, sealed register, honest constraints, e2e review scenario, parallel directories. Gap: /logo.png 404. Rule: live-verify OpenAI reqs before submit. Submit = founder action.",
+   "at": 236714,
+   "evidence": "action_ledger imprint 236714"
   }
  ],
- "generated_utc": "2026-08-20T08:19:54.068693+00:00",
+ "generated_utc": "2026-08-23T00:18:10.277866+00:00",
  "honest_note": "entries are steward imprints, not marketing; external paid cycles counter lives in COMPLIANCE.md, not here"
 }
