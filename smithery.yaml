@@ -1,0 +1,22 @@
+# Generated from the AstraNL canon - the single source every channel
+# renders. Do not hand-edit; regenerate with
+# scripts/m426_smithery_manifest.py
+startCommand:
+  type: http
+  url: https://astranl.com/mcp/streamable
+runtime: remote
+description: >-
+  AstraNL turns an intent into verified real-world execution: a register-verified person performs the errand and the money stays held until the principal confirms the proof agreed before the work.
+homepage: https://astranl.com/agent-hands/
+capabilities:
+  - astranl_execute
+  - astranl_procure
+  - astranl_verify
+  - astranl_find
+  - astranl_coordinate
+  - search
+  - fetch
+  - compose_parts_basket
+limits:
+  money: "broker; custody never - Stripe holds, principal confirms, executor is paid directly; an unconfirmed hold auto-releases after 7 days; not insurance"
+  geography: "ordering open to a principal anywhere; execution Netherlands, where register-verified (KvK) executors stand"
