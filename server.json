@@ -1,8 +1,9 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.astranl",
-  "description": "Coordination protocol: notary between AI agents and physical execution (NL/EU). Signed case proofs, direct settlement, 0% launch fee.",
-  "version": "1.33.1",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.astranl/mcp",
+  "description": "Signed EU registry & VAT checks for agents from EUR 0.50 a call; plus verified local hands.",
+  "version": "1.35.15",
+  "websiteUrl": "https://astranl.com/agent-hands/",
   "remotes": [
     {
       "type": "streamable-http",
@@ -13,5 +14,23 @@
       "url": "https://astranl.com/mcp/sse"
     }
   ],
-  "websiteUrl": "https://astranl.com"
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "open_doors": [
+        "enter",
+        "act_in_the_physical_world",
+        "coordinate",
+        "verify_us",
+        "measure",
+        "settle",
+        "mark",
+        "talk",
+        "be_called_back",
+        "check_counterparty",
+        "federate"
+      ],
+      "capability_register": "https://astranl.com/.well-known/agent-port.json",
+      "generated_at": "2026-08-24T09:54:39.146463+00:00"
+    }
+  }
 }
