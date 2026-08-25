@@ -5,6 +5,10 @@
   ],
   "mcpServers": {
     "astranl": {
+      "type": "streamable-http",
+      "url": "https://astranl.com/mcp/streamable"
+    },
+    "astranl-sse-fallback": {
       "type": "sse",
       "url": "https://astranl.com/mcp/sse"
     }
