@@ -12,7 +12,7 @@ Geography: ordering open to a principal anywhere; execution Netherlands, where r
 
 Public capabilities: `astranl_execute`, `astranl_procure`, `astranl_verify`, `astranl_find`, `astranl_coordinate`, `search`, `fetch`, `compose_parts_basket`.
 
-Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-08-26T01:53:10.471569+00:00).
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-08-26T08:31:02.747527+00:00).
 
 ## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-08-26)
 
