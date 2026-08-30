@@ -1,10 +1,10 @@
 {
  "key_id": "astranl-lock-2",
  "pubkey": "https://astranl.com/api/astralock/pubkey",
- "root_hash": "0b7f4d702c347cd91453800a11ce23077f33d60ca6a64497fed785540477bbb7",
- "signature": "95fc8de9ec48ea99bc565177c1dd0114788431e7a121e28e4ce0a0cbfcdb64bf141903a56443f9307d314b300504c505bb883a86e6235a40ea9f947e50cef30c",
+ "root_hash": "9ae36cca6b42d6d27b0fe6eaea21c48e97f256f2b76ff50fe9b61f8d402f1496",
+ "signature": "51b622fe01f4d4a0e05bd7b550d4eb197627e3db7ef4e19038e18cc56ccadbc054a55d1219fd0715f3fcff4499dca2f8d5af94244ec6e1f355d93d5f00c5d308",
  "source": "https://astranl.com/api/astralock/sth",
- "timestamp": "2026-08-30T11:02:27.905858+00:00",
- "tree_size": 7078,
- "witnessed_at": "2026-08-30T11:03:06.116018+00:00"
+ "timestamp": "2026-08-30T12:04:53.163855+00:00",
+ "tree_size": 7136,
+ "witnessed_at": "2026-08-30T12:05:24.498923+00:00"
 }
