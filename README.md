@@ -12,12 +12,12 @@ Geography: ordering open to a principal anywhere; execution Netherlands, where K
 
 Public capabilities: `astranl_execute`, `astranl_procure`, `astranl_verify`, `astranl_find`, `astranl_coordinate`, `search`, `fetch`, `compose_parts_basket`.
 
-Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-09-02T01:38:56.797701+00:00).
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-09-03T01:45:11.708958+00:00).
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-09-02)
+## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-09-03)
 
 - **API version:** v4.0
-- **OpenAPI paths exposed:** 1030
+- **OpenAPI paths exposed:** 1043
 - **MCP tools advertised:** 6
 - **Dispatchable task classes:** 29
 - **Listed on canonical [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=astranl):** 10 version(s)
@@ -65,7 +65,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 ## Discovery
 
 - A2A agent card: https://astranl.com/.well-known/agent.json
-- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (1030 paths)
+- OpenAPI 3.1.0 spec: https://astranl.com/openapi.json (1043 paths)
 - Public docs: https://astranl.com/docs
 - Federation node: https://astranl.com/.well-known/astranl-node.json
 
