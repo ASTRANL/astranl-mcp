@@ -1,0 +1,22 @@
+diff --git a/scripts/constituents.py b/scripts/constituents.py
+index 52a5d03..620a241 100644
+--- a/scripts/constituents.py
++++ b/scripts/constituents.py
+@@ -8,7 +8,7 @@ datadir = join('..', 'data')
+ 
+ if not exists(datadir):
+     mkdir(datadir)
+-source_page = open('List_of_S%26P_500_companies.html').read()
++source_page = open('List_of_S%26P_500_companies.html', encoding='utf-8').read()
+ soup = BeautifulSoup(source_page, 'html.parser')
+ table = soup.find("table", { "id" : "constituents" })
+ 
+@@ -32,7 +32,7 @@ for row in rows:
+ header = ['Symbol', 'Name', 'Sector']
+ records.sort(key=lambda s: s[1].lower())
+ 
+-with open('../data/constituents.csv', 'w', newline='') as f:
++with open('../data/constituents.csv', 'w', newline='', encoding='utf-8') as f:
+     writer = csv.writer(f)
+     writer.writerow(header)
+     writer.writerows(records) 
