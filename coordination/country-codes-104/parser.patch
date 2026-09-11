@@ -1,0 +1,49 @@
+--- a/scripts/statoids.py
++++ b/scripts/statoids.py
+@@ -1,6 +1,7 @@
+ #!/usr/bin/env python
+ # -*- coding: utf-8 -*-
+ import json
++import copy
+ import codecs
+ import collections
+ import urllib.request
+@@ -137,6 +138,22 @@
+     return row
+ 
+ 
++def process_statoids_fifa_row(tr):
++    """Read the row while keeping FIFA footnote markers out of code values."""
++    row = [td.text_content() for td in tr.iterchildren()]
++    if len(row) < 8:
++        return row
++    fifa_cell = copy.deepcopy(tr[7])
++    if row[1] == "GB" and fifa_cell.find(".//a[@href='#note1']") is not None:
++        # The source footnote expands the UK's four separate associations.
++        row[7] = "ENG,NIR,SCO,WAL"
++    else:
++        for anchor in fifa_cell.xpath(".//a[starts-with(@href, '#note')]"):
++            anchor.drop_tree()
++        row[7] = fifa_cell.text_content()
++    return row
++
++
+ statoids_url = "http://www.statoids.com/wab.html"
+ print('Fetching other country codes...')
+ content = urllib.request.urlopen(statoids_url).read()
+@@ -154,13 +171,13 @@
+ table_rows = {}
+ 
+ for tr in doc.find_class('e'):
+-    row = [td.text_content() for td in tr.iterchildren()]
++    row = process_statoids_fifa_row(tr)
+     row_dict = collections.OrderedDict(zip(column_names, row))
+     row_dict.pop('Entity')
+     table_rows.update({row_dict[alpha2_key]: row_dict})
+ 
+ for tr in doc.find_class('o'):
+-    row = [td.text_content() for td in tr.iterchildren()]
++    row = process_statoids_fifa_row(tr)
+     row_dict = collections.OrderedDict(zip(column_names, row))
+     row_dict.pop('Entity')
+     table_rows.update({row_dict[alpha2_key]: row_dict})

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "source_cell_regressions": [
+    {
+      "alpha2": "AQ",
+      "before": "ROS3",
+      "after": "ROS"
+    },
+    {
+      "alpha2": "PF",
+      "before": "TAH2",
+      "after": "TAH"
+    },
+    {
+      "alpha2": "GB",
+      "before": "1",
+      "after": "ENG,NIR,SCO,WAL"
+    }
+  ],
+  "additional_preservation_cases": 5,
+  "csv_rows": 249,
+  "csv_columns": 56,
+  "changed_cells_in_optional_preview": [
+    {
+      "alpha2": "AQ",
+      "field": "FIFA",
+      "before": "ROS3",
+      "after": "ROS"
+    },
+    {
+      "alpha2": "PF",
+      "field": "FIFA",
+      "before": "TAH2",
+      "after": "TAH"
+    },
+    {
+      "alpha2": "GB",
+      "field": "FIFA",
+      "before": "1",
+      "after": "ENG,NIR,SCO,WAL"
+    }
+  ],
+  "unchanged_cells_in_optional_preview": 13941,
+  "parser_sha256": "afdf49c5fe15e9144941cee2c1730a45d8a8c307eb68df8137f530809e54579d",
+  "external_acceptance": false,
+  "limitation": "Parser fix only; no authoritative conclusion on Antarctica FIFA assignment.",
+  "standalone_parser_reproduction": {
+    "status": "PASS",
+    "source_cell_cases": [
+      {
+        "alpha2": "AQ",
+        "before": "ROS3",
+        "after": "ROS"
+      },
+      {
+        "alpha2": "PF",
+        "before": "TAH2",
+        "after": "TAH"
+      },
+      {
+        "alpha2": "GB",
+        "before": "1",
+        "after": "ENG,NIR,SCO,WAL"
+      }
+    ],
+    "preservation_cases": 5,
+    "active_loop_replacements": 2,
+    "patch_sha256": "6a2e728aa9bcf4558ba6fb0d265efa02bd5c3ecb545c6b2fd0480ef375b861ce",
+    "meaning": "Source parsing only; no verified FIFA assignment for Antarctica.",
+    "external_acceptance": false
+  }
+}

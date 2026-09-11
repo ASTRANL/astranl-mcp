@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-09-11",
+  "upstream_commit": "6a595f1a6f10b3d00175fe67375da88f64f7f76b",
+  "issue": {
+    "url": "https://github.com/datasets/country-codes/issues/104",
+    "author": "asergeyev",
+    "created_at": "2026-06-25T13:55:52Z",
+    "state": "open",
+    "comments_at_check": 0,
+    "request": "Verify whether Antarctica's ROS3 FIFA value is mistaken.",
+    "freshness": "Existing unresolved request, not a request newly made today."
+  },
+  "git_blobs": {
+    "scripts/statoids.py": "7c26996785753668307f53ca54b4af702c605a47",
+    "data/country-codes.csv": "f1cad381b15224af8ea56f93aec61073d3ca4ab6"
+  },
+  "sources": [
+    {
+      "url": "https://www.statoids.com/wab.html",
+      "checked_at": "2026-09-11T07:37:14.157582+00:00",
+      "status": 200,
+      "bytes": 103607,
+      "sha256": "c0901d132bfb707bd017366a575927492b26859065086de0eecd343738136a4d",
+      "interpretation": "Primary evidence for exact HTML consumed by repository, not authoritative current FIFA assignment. Statoids says its FIFA list supplements FIFA data with Wikipedia codes and notes discrepancies."
+    },
+    {
+      "url": "https://inside.fifa.com/associations",
+      "checked_at": "2026-09-11T07:37:14.157582+00:00",
+      "direct_http_status": 403,
+      "response_sha256": "8b0bdf273a9303d7e35f7583d105a44544ba8ae0a49c26710b16050e2dccac39",
+      "web_extraction": "General 211-association description only; no complete current roster acquired.",
+      "membership_validation": "INCOMPLETE"
+    }
+  ],
+  "contribution_review": {
+    "repository_tree": "No AGENTS.md, CONTRIBUTING file or AI policy found; .github only workflows. Organization .github repository returned404, which is not proof there are no organization-wide instructions.",
+    "license": "Repository README states maintainers use Public Domain Dedication and License, with source-rights caveats. Existing source attribution preserved; no claim of new permission or licensing waiver.",
+    "cla_or_signature": "No requirement found in inspected repository; no signature or agreement executed."
+  },
+  "scope": {
+    "code": "Parser-only patch; removes FIFA footnote markers, preserving other columns.",
+    "data": "Separate preview only: three FIFA cells AQ,PF,GB. No upstream write performed.",
+    "unresolved": "Whether Antarctica's FIFA field should be blank; parsing ROS does not establish it is an official FIFA code.",
+    "external_acceptance": false,
+    "submission": false,
+    "paid": false
+  },
+  "contribution_policy_receipt": "contribution_policy_receipt.json"
+}

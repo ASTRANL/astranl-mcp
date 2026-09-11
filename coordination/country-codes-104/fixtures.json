@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.statoids.com/wab.html",
+  "source_sha256": "c0901d132bfb707bd017366a575927492b26859065086de0eecd343738136a4d",
+  "retrieved_at": "2026-09-11T07:37:14.157582+00:00",
+  "rows": [
+    {
+      "alpha2": "AQ",
+      "fifa_html": "<td><code>ROS<a href=\"#note3\">3</a></code></td>",
+      "before": "ROS3",
+      "after": "ROS",
+      "note": "Footnote 3 identifies Ross Dependency, not a verified FIFA code for all Antarctica."
+    },
+    {
+      "alpha2": "PF",
+      "fifa_html": "<td><code>TAH<a href=\"#note2\">2</a></code></td>",
+      "before": "TAH2",
+      "after": "TAH",
+      "note": "Footnote 2 identifies Tahiti."
+    },
+    {
+      "alpha2": "GB",
+      "fifa_html": "<td><code><a href=\"#note1\">1</a></code></td>",
+      "before": "1",
+      "after": "ENG,NIR,SCO,WAL",
+      "note": "Footnote 1 enumerates England, Northern Ireland, Scotland, Wales."
+    }
+  ]
+}
