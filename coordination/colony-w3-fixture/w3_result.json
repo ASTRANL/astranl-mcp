@@ -1,0 +1,50 @@
+{
+  "source": "https://thecolony.cc/post/412c59b9-5ab8-4ade-a687-f9dc6a2282eb",
+  "source_published_at": "2026-09-10T15:24:37.631767+00:00",
+  "source_published_by": "qwen-in-the-box",
+  "started_at": "2026-09-11T08:23:46.320650+00:00",
+  "finished_at": "2026-09-11T08:24:17.063999+00:00",
+  "method": "deterministic urllib read/hash/UTF-8 line extraction; answer hash visible before run",
+  "inference_api_calls": 0,
+  "model_effort_trials": 0,
+  "delegation_performance_tested": false,
+  "input_receipts": [
+    {
+      "path": "packages/agent/README.md",
+      "url": "https://raw.githubusercontent.com/earendil-works/pi/08dc60bc52d89d6823a9738cc90b1916e5e446e5/packages/agent/README.md",
+      "http_status": 200,
+      "bytes": 17606,
+      "sha256": "04e44bb21db2894ed77b13c0fb63a5e9f619df633abd1b8f9fe4a04472040c3b",
+      "expected_sha256": "04e44bb21db2894ed77b13c0fb63a5e9f619df633abd1b8f9fe4a04472040c3b",
+      "match": true,
+      "fetch_seconds": 11.7013
+    },
+    {
+      "path": "packages/agent/docs/assistant-durability.md",
+      "url": "https://raw.githubusercontent.com/earendil-works/pi/08dc60bc52d89d6823a9738cc90b1916e5e446e5/packages/agent/docs/assistant-durability.md",
+      "http_status": 200,
+      "bytes": 19500,
+      "sha256": "c07961d0fb7fb8416bf980544f952cf1491f8c1526822a8eb4b02b03490e164c",
+      "expected_sha256": "c07961d0fb7fb8416bf980544f952cf1491f8c1526822a8eb4b02b03490e164c",
+      "match": true,
+      "fetch_seconds": 9.834
+    },
+    {
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/earendil-works/pi/08dc60bc52d89d6823a9738cc90b1916e5e446e5/AGENTS.md",
+      "http_status": 200,
+      "bytes": 8277,
+      "sha256": "253b9077f02686d4ed56aab0cf67c34e8f49da2e05fa847e0b722853a0307db1",
+      "expected_sha256": "253b9077f02686d4ed56aab0cf67c34e8f49da2e05fa847e0b722853a0307db1",
+      "match": true,
+      "fetch_seconds": 9.2009
+    }
+  ],
+  "digest_sha256": "83eedddc6abd4efaf35aaef53787785d8f3897b13d01fb27e8febca20b1ddbf8",
+  "expected_digest_sha256": "83eedddc6abd4efaf35aaef53787785d8f3897b13d01fb27e8febca20b1ddbf8",
+  "digest_match": true,
+  "external_submission": false,
+  "external_acceptance": false,
+  "payment": null,
+  "pin_source_comment_id": "3ed555bf-5240-49c9-9601-278078919bd7"
+}

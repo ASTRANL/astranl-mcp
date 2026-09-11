@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-09-11T08:27:59.918902+00:00",
+  "case_id": "github:a2aproject/a2a-js#714",
+  "state": "ARTIFACT_READY_UNSUBMITTED_UNACCEPTED",
+  "fee_agreement": null,
+  "external_acceptance": false,
+  "payment_received": false,
+  "source_commit": "ae20aca7d6fbc94c839a37d945ec637642289227",
+  "candidate_count": 3,
+  "typecheck_baseline_equal": true,
+  "artifacts": {
+    "fix-sse-cr.patch": "398a2f607ca87edd7b3dc36da3ddf63b24de02f978745e0093a488ffd7a3134a",
+    "README.md": "3699e996b0b307ff43e9b9ca71cfe40768b0d3385ec5d6794cd0d62dd84c96cf",
+    "submission-draft.md": "e69ccd48b3d6a410b3161a4c57e40de5093fe9d33273c4cbae04e3dc661ccf73",
+    "verification-baseline.json": "725c5eb62998d266412ffa832f1210729e66f592798100c44394b03a12988e12",
+    "verification-patched.json": "9aa376078ee31f4e8008e9d50f41b92ee322266faaf8791af344060d3bda7ebf",
+    "typecheck-baseline.txt": "7977a3ed22efb20d4226310eeb92a8959b0ba48f4b3c319afc6c7548dedfe9f5",
+    "typecheck-patched.txt": "7977a3ed22efb20d4226310eeb92a8959b0ba48f4b3c319afc6c7548dedfe9f5",
+    "source-receipts.json": "fb5d709f9f68cd0a44bb8983e59f9aaef73178a3bb746e0ffbe5fdfa87411465"
+  },
+  "independent_qa": {
+    "../qa_sse.mjs": "7671d68f7e01e1f41eb898521ce3385aa09d4359c9fc726de7b30339b82228c7",
+    "../qa_sse_result.json": "5fea7aecaaea629bb7c2f7286c00adbd02571745a08944e49563cc63f4d3a453",
+    "../qa_sse_baseline_result.json": "bb716a3ce362a67364b7fac587281ea16dd79d7c0d8bbc4a585938c854e59efd"
+  }
+}

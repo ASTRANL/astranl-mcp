@@ -1,0 +1,13 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+src/samples/agents/movie-agent/genkit.ts(1,26): error TS2307: Cannot find module '@genkit-ai/google-genai' or its corresponding type declarations.
+src/samples/agents/movie-agent/genkit.ts(2,24): error TS2307: Cannot find module 'genkit' or its corresponding type declarations.
+src/samples/agents/movie-agent/genkit.ts(12,19): error TS2307: Cannot find module 'genkit' or its corresponding type declarations.
+src/samples/agents/movie-agent/index.ts(26,29): error TS2307: Cannot find module 'genkit' or its corresponding type declarations.
+src/samples/agents/movie-agent/tools.ts(12,12): error TS7031: Binding element 'query' implicitly has an 'any' type.
+src/samples/agents/movie-agent/tools.ts(48,12): error TS7031: Binding element 'query' implicitly has an 'any' type.
+src/samples/authentication/authentication_middleware.ts(2,22): error TS2307: Cannot find module 'passport' or its corresponding type declarations.
+src/samples/authentication/authentication_middleware.ts(3,53): error TS2307: Cannot find module 'passport-jwt' or its corresponding type declarations.
+src/samples/authentication/authentication_middleware.ts(11,6): error TS7006: Parameter 'jwt_payload' implicitly has an 'any' type.
+src/samples/authentication/authentication_middleware.ts(11,19): error TS7006: Parameter 'done' implicitly has an 'any' type.
+src/samples/authentication/authentication_middleware.ts(27,11): error TS2339: Property 'user' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+src/samples/authentication/user_builder.ts(17,23): error TS18047: 'user' is possibly 'null'.

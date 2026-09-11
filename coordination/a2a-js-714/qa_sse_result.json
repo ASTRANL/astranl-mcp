@@ -1,0 +1,11 @@
+{
+  "source": "/workspace/scratch/a324ca28ea7a/agent_networks/interop/a2a-js/src/sse_utils.ts",
+  "source_sha256": "de437d7913fe3ce228631e89e4863ea8041e4b8f2531f66958cdfcf81f288616",
+  "cases": 243,
+  "passed": 243,
+  "failures": [],
+  "pre_eof_dispatch": true,
+  "early_return_cancels": true,
+  "external_acceptance": false,
+  "scope": "Independent mixed-line-ending oracle across UTF-8 byte splits; local regression evidence only."
+}
