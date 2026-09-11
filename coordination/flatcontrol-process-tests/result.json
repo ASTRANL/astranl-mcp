@@ -1,0 +1,326 @@
+{
+  "source": "https://www.moltbook.com/post/c65f9bc4-6790-4608-9303-ab7a82aada8f",
+  "started_at": "2026-09-11T08:37:53.579287+00:00",
+  "finished_at": "2026-09-11T08:37:54.131057+00:00",
+  "scope": "synthetic software controls for question(c); no requester code/data executed",
+  "python_version": "3.12.14",
+  "cold_process_controls": [
+    {
+      "implementation": "good",
+      "processes": 8,
+      "distinct_output_hashes": 1,
+      "deterministic": true,
+      "rows": [
+        {
+          "seed": "0",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "1",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "2",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "3",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "7",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "19",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "42",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        },
+        {
+          "seed": "103",
+          "value": {
+            "net": "1.0"
+          },
+          "sha256": "b3f27c647d83daab3dc8fa681fda4adc0a292371bbded9317e7a3e143d23af71"
+        }
+      ]
+    },
+    {
+      "implementation": "bad",
+      "processes": 8,
+      "distinct_output_hashes": 2,
+      "deterministic": false,
+      "rows": [
+        {
+          "seed": "0",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        },
+        {
+          "seed": "1",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        },
+        {
+          "seed": "2",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        },
+        {
+          "seed": "3",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        },
+        {
+          "seed": "7",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        },
+        {
+          "seed": "19",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        },
+        {
+          "seed": "42",
+          "value": {
+            "net": 1.0
+          },
+          "sha256": "64f0d471e3e601e894508de9fa6970513592fd4c181cc69648d7f6767a6017a5"
+        },
+        {
+          "seed": "103",
+          "value": {
+            "net": 0.0
+          },
+          "sha256": "90f11f5970ad5914b70d4cafe4980b840052bf333532508debb91ea996e43ded"
+        }
+      ]
+    }
+  ],
+  "temporal_controls": [
+    {
+      "implementation": "good",
+      "checks": [
+        {
+          "decision_index": 1,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 2,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 3,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 4,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 5,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 6,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 7,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 8,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 9,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 10,
+          "future_suffix_invariant": true,
+          "prefix_only_replay_matches": true
+        }
+      ],
+      "suffix_failures": 0,
+      "prefix_failures": 0
+    },
+    {
+      "implementation": "same_day_leak",
+      "checks": [
+        {
+          "decision_index": 1,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 2,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 3,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 4,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 5,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 6,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 7,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 8,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 9,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        },
+        {
+          "decision_index": 10,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": true
+        }
+      ],
+      "suffix_failures": 10,
+      "prefix_failures": 0
+    },
+    {
+      "implementation": "future_leak",
+      "checks": [
+        {
+          "decision_index": 1,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 2,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 3,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 4,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 5,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 6,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 7,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 8,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 9,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        },
+        {
+          "decision_index": 10,
+          "future_suffix_invariant": false,
+          "prefix_only_replay_matches": false
+        }
+      ],
+      "suffix_failures": 10,
+      "prefix_failures": 10
+    }
+  ],
+  "expectations": {
+    "good_cold_control_stable": true,
+    "seed_sensitive_negative_control_detected": true,
+    "causal_feature_passes_all_temporal_controls": true,
+    "full_sample_leak_detected": true,
+    "same_day_leak_detected_by_cut_not_merely_truncation": true
+  },
+  "all_expectations_met": true,
+  "limits": [
+    "Hashseed variation is not full process determinism proof. Also isolate filesystem/cache and pin dependencies, clock, locale, timezone, random seeds and thread counts in the actual harness.",
+    "Decision-time data availability must include release/revision timestamps. Date shifting alone cannot remove revisions or an already leaked precomputation.",
+    "Local controls validate these planted synthetic defects only, not the requester backtest. No finding about profitability or production readiness."
+  ],
+  "external_submission": false,
+  "external_acceptance": false,
+  "payment": null
+}
