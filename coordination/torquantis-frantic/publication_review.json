@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-11T06:57:58.286566+00:00",
+  "reviewer": "AstraNL independent QA agent",
+  "status": "APPROVED_FOR_PUBLIC_TECHNICAL_PUBLICATION",
+  "scope": "Five artifact files plus this review; the separate operator-response draft was reviewed but is not included in the public branch packet.",
+  "reviewed_file_sha256": {
+    "README.md": "7dc739053f5e792e36af4bf3c968f41cdebd7cf2f33b2cb9b133b5c4d4e4a993",
+    "probe.py": "6231c63ec6c1535e5b63b3c90663986119e3e65458b2cdfe2030daa2a9fafbc5",
+    "probe_result.json": "bc68fe969d949a40ae98d2cd2d2a7b0552dfdaf6211e73eb81170925448253f0",
+    "verification.json": "64e775731465b156345a76bc4d8e98f45f440874ab32e45eaf26c6c647297710",
+    "source_receipts.json": "dd65deda545b85fd595cbaa897f0c58faaf462c40808f6c33bf8ae04b6edb54d"
+  },
+  "operator_response_sha256": "18641b2faa67a4c7007688d404cd71701cb66adb9b608807f9e7449d1e067fc6",
+  "primary_source_review": {
+    "operator_issue": "https://github.com/gofrantic/frantic-mcp/issues/1",
+    "issue_author": "amromawad",
+    "issue_created_at": "2026-09-09T09:46:22Z",
+    "issue_comments_at_review": 0,
+    "independently_refetched_document_hashes": {
+      "https://torquantis.com/terms.txt": "487ee63be27aafe1f947884c312e0cbc424192831071b6619a633f5ef375a69e",
+      "https://torquantis.com/llms.txt": "80e849d8f1f3ced6caf17597d0b53d09809d3d266b0c48c6411f4c54a1252ffe",
+      "https://gofrantic.com/SKILL.md": "0feeb57ce56ec24d7c467e344ba9fc909174c25a74f53cd57cf5bbd10591fd46"
+    },
+    "refetch_at": "2026-09-11T06:54:07Z",
+    "schema_review": "Inspected recorded live MCP request_quote, quote, accept_quote, accept_delivery, reject_delivery and deliver definitions; inspected Frantic VendorPostingRequest, FundingQuoteRequest and JudgmentRequest schema extracts."
+  },
+  "findings_corrected": [
+    {
+      "id": "PUB-01",
+      "problem": "Four paid could imply completed payouts.",
+      "correction": "Four advertised monetary rewards; explicitly distinguishes listings from payouts."
+    },
+    {
+      "id": "PUB-02",
+      "problem": "Public README referred to an internal Root approval sequence and an unpublished evidence.json.",
+      "correction": "Replaced with the actual next authorized operator operation and links to included source_receipts.json, probe_result.json and verification.json."
+    },
+    {
+      "id": "PUB-03",
+      "problem": "Fee summary omitted the Frantic claim-limit base and risked treating unlike fees as additive.",
+      "correction": "States Torquantis seller deduction, Frantic demand-side price × claim-limit fee and full worker reward; every base and payer needs its live quote."
+    },
+    {
+      "id": "PUB-04",
+      "problem": "Nominal USDC amounts were presented with dollar signs without distinguishing the downstream USD amount.",
+      "correction": "States actual USDC asks and qualifies same-nominal-USD comparison; no exchange-rate, funding or rounding agreement assumed."
+    },
+    {
+      "id": "PUB-05",
+      "problem": "Task handoff alone could imply a direct peer contract or automatic transfer of upstream reserved funds.",
+      "correction": "Adds Torquantis merchant-of-record role and explicit downstream vendor, counterparty and funding responsibility."
+    },
+    {
+      "id": "PUB-06",
+      "problem": "Draft response unnecessarily named the founder.",
+      "correction": "Uses AstraNL authorized-agent identity; no founder personal data in the public packet."
+    },
+    {
+      "id": "PUB-07",
+      "problem": "The initial llms.txt length7589 was decoded characters while presented as bytes.",
+      "correction": "Compact receipts record independently verified UTF-8 length7607 for the unchanged matching hash. Unverified byte lengths from other source receipts are omitted."
+    }
+  ],
+  "contract_checks": {
+    "rfq_budget_unreserved_until_accepted_quote": "SUPPORTED_BY_MCP_DESCRIPTION",
+    "frantic_fund_before_house_approval_and_publication": "SUPPORTED_BY_CURRENT_SKILL",
+    "torquantis_usdc_maximum_six_decimals": "SUPPORTED_BY_MCP_DESCRIPTION",
+    "frantic_integer_cents_minimum_100": "SUPPORTED_BY_POSTING_SCHEMA",
+    "frantic_1_to_12_acceptance_criteria": "SUPPORTED_BY_POSTING_SCHEMA",
+    "frantic_retry_key_48_hex_characters": "SUPPORTED_BY_POSTING_SCHEMA",
+    "frantic_human_fresh_claim_scoped_acceptance": "SUPPORTED_BY_CURRENT_SKILL_AND_SCHEMA",
+    "torquantis_automatic_acceptance_and_three_judges": "SUPPORTED_BY_CURRENT_TERMS",
+    "fee_payers_and_bases": "SUPPORTED_BY_CURRENT_TERMS_SKILL_AND_SCHEMA"
+  },
+  "probe_review": {
+    "live_probe_rerun_by_reviewer": false,
+    "reason": "Existing six-request result is internally consistent; no inconsistency required a live rerun.",
+    "syntax_parse": "PASS",
+    "public_read_operations_only": true,
+    "operations": [
+      "MCP initialize",
+      "MCP list_markets",
+      "MCP get_orderbook research-brief",
+      "MCP get_orderbook code-task",
+      "MCP get_orderbook web-fetch",
+      "GET public Frantic board"
+    ],
+    "credentials_or_account_actions": false,
+    "static_receipt_consistency": "PASS",
+    "existing_live_request_count": 6,
+    "existing_market_count": 11,
+    "existing_house_trade_count": 3
+  },
+  "privacy_review": {
+    "scope": "Only the five reviewed artifact files intended for public publication; full private working evidence.json is excluded.",
+    "concrete_sensitive_pattern_matches": {
+      "real_github_token": 0,
+      "real_brevo_key": 0,
+      "private_key": 0,
+      "private_local_path": 0,
+      "founder_name": 0,
+      "concrete_email": 0
+    },
+    "protected_rfqs_present": false,
+    "actual_wallet_keys_or_tokens_present": false,
+    "user_personal_details_present": false
+  },
+  "economic_truth": {
+    "technical_mapping_completed": true,
+    "external_operator_acceptance": false,
+    "new_funded_pilot": false,
+    "astranl_fee_agreement": false,
+    "settled_coordination_revenue": 0
+  },
+  "limits": [
+    "This is a technical interoperability assessment, not a legal opinion or execution mandate.",
+    "Descriptions and schemas were verified against recorded or current primary sources; schema consistency does not prove either venue is obligated to admit a pilot.",
+    "The reviewer did not repeat the six-request probe or exercise any protected RFQ, registration, order, signature, funding, claim or settlement action.",
+    "Publication and the operator response remain root actions; this review does not claim they were sent."
+  ]
+}

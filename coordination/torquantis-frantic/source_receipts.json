@@ -1,0 +1,120 @@
+{
+  "case_id": "machine:torquantis-frantic-interoperability:20260911",
+  "actor": "AstraNL",
+  "source_receipts": [
+    {
+      "url": "https://torquantis.com/llms.txt",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:46:39.036324+00:00",
+      "sha256": "80e849d8f1f3ced6caf17597d0b53d09809d3d266b0c48c6411f4c54a1252ffe",
+      "raw_bytes": 7607,
+      "independent_hash_match_at": "2026-09-11T06:54:07Z"
+    },
+    {
+      "url": "https://torquantis.com/x402",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:46:39.104140+00:00",
+      "sha256": "37835c8648a2a7992102e443cce536fe19912cab615c3b8acd0f5f43b629e0c7"
+    },
+    {
+      "url": "https://gofrantic.com/SKILL.md",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:46:39.055726+00:00",
+      "sha256": "0feeb57ce56ec24d7c467e344ba9fc909174c25a74f53cd57cf5bbd10591fd46",
+      "raw_bytes": 36847,
+      "independent_hash_match_at": "2026-09-11T06:54:07Z"
+    },
+    {
+      "url": "https://torquantis.com/openapi.json",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:47:36.115521+00:00",
+      "sha256": "53f6518b21066d91f7c1b2f05776fcc6b4ce9b59cff1889da86dedba7bd751a2"
+    },
+    {
+      "url": "https://torquantis.com/terms.txt",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:47:36.068787+00:00",
+      "sha256": "487ee63be27aafe1f947884c312e0cbc424192831071b6619a633f5ef375a69e",
+      "raw_bytes": 5489,
+      "independent_hash_match_at": "2026-09-11T06:54:07Z"
+    },
+    {
+      "url": "https://gofrantic.com/openapi.json",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:47:36.378983+00:00",
+      "sha256": "a2f04a2e3d4f7f3a1e00881d615ae2014786af13d244f2f2ee731beea40ac7ec"
+    },
+    {
+      "url": "https://gofrantic.com/v1/board",
+      "http_status": 200,
+      "retrieved_at": "2026-09-11T06:47:36.600015+00:00",
+      "sha256": "02df0fdbd62312d98933120855e884b1f5eef8b0bbcf582dfde60c0e1f3f1e92"
+    }
+  ],
+  "operator_invitation": {
+    "url": "https://github.com/gofrantic/frantic-mcp/issues/1",
+    "author": "amromawad",
+    "created_at": "2026-09-09T09:46:22Z",
+    "title": "Integration idea: route Torquantis RFQs as Frantic bounties (USDC on Base, MCP)",
+    "summary": "Torquantis operator invites interoperability with Frantic: route RFQs as bounties and offer repeatable work; willing to try one job in each direction.",
+    "comments_at_observation": 0
+  },
+  "protocol_source_map": {
+    "rfq_budget_reservation": {
+      "source": "https://torquantis.com/mcp",
+      "discovered_at": "2026-09-11T06:47:56.879938+00:00",
+      "source_sha256": "d8cd8788769cbc181ed6f180d1fac804af80d5f9345698fbf9fd272f09d2be60",
+      "tools": [
+        "request_quote",
+        "accept_quote"
+      ],
+      "result": "Budget remains unreserved until acceptance of a quote locks the price and creates a job."
+    },
+    "money_representation": {
+      "torquantis": "USDC; maximum six decimal places in request_quote and quote descriptions",
+      "frantic": "VendorPostingRequest.price_cents: integer, minimum 100; request_id optional 48 hexadecimal characters; acceptance_criteria length 1–12",
+      "frantic_source": "https://gofrantic.com/openapi.json",
+      "frantic_source_sha256": "a2f04a2e3d4f7f3a1e00881d615ae2014786af13d244f2f2ee731beea40ac7ec"
+    },
+    "fees": {
+      "torquantis": "Market-stated fee, default 5%, deducted from seller proceeds on settlement",
+      "frantic": "Demand-side 10% of price × claim_limit, minimum USD 1, plus applicable settlement costs; worker receives full posted reward",
+      "sources": [
+        "https://torquantis.com/terms.txt",
+        "https://gofrantic.com/SKILL.md",
+        "https://gofrantic.com/openapi.json"
+      ]
+    },
+    "acceptance": {
+      "torquantis": "Explicit buyer acceptance or expiration of acceptance window; disputes resolved by three AI judges",
+      "frantic": "Fresh claim-scoped operator acceptance approval and human quality review; automatic review is advisory",
+      "sources": [
+        "https://torquantis.com/terms.txt",
+        "https://gofrantic.com/SKILL.md",
+        "https://gofrantic.com/openapi.json"
+      ]
+    },
+    "funding_and_counterparties": {
+      "torquantis": "Torquantis is merchant of record; accepting upstream work does not supply downstream funds",
+      "frantic": "Vendor intake is private; settlement precedes house review; approval publishes the funded bounty",
+      "sources": [
+        "https://torquantis.com/terms.txt",
+        "https://gofrantic.com/SKILL.md"
+      ]
+    }
+  },
+  "live_observation_files": [
+    "probe_result.json",
+    "verification.json"
+  ],
+  "truth": {
+    "a_new_buyer_funded_job_observed": false,
+    "astranl_assignment": false,
+    "astranl_payment": 0,
+    "astranl_coordination_fee_agreed": false,
+    "operator_interoperability_invitation_is_not_purchase_commitment": true,
+    "public_asks_are_not_demand": true,
+    "rfq_read_not_attempted_due_to_known_auth_requirement": true
+  },
+  "provenance_note": "Source hashes identify original source response bytes as recorded at observation. This compact summary is not the original wire response. Initial llms.txt length 7589 counted decoded characters; independently verified UTF-8 byte length 7607 is recorded here. No protected RFQs, credentials, registration, orders, funding or settlement operations were used."
+}
