@@ -4,7 +4,7 @@
 
 AstraNL MCP Server — Give AstraNL one real thing you need changed. It coordinates the rest. AstraNL is the neutral coordination and evidence layer between intent and real-world execution. It connects existing systems, agents and organisations to the right real-world capability - human, company, machine, robot, stock, transport or service - and returns a typed record of what was actually observed, agreed, executed and settled.
 
-AstraNL turns an intent into verified real-world execution: a KvK-registered executor (verification state on its public card) performs the errand; the principal's card hold sits on that executor's own Stripe account and is captured only after the principal confirms the proof agreed before the work; AstraNL receives only its coordination fee.
+AstraNL turns an intent into verified real-world execution: a KvK-registered executor performs the work; the client pays that provider directly on the agreed provider-owned business rail. Stripe is optional. AstraNL never receives or controls the work amount and invoices only its separate 1% coordination fee after a paid, confirmed outcome.
 
 Fee: 1% coordination fee - only on a paid outcome, in force since 2026-09-01.
 
@@ -14,9 +14,9 @@ Geography: ordering open to a principal anywhere; execution Netherlands, where K
 
 Public capabilities: `ask_astranl`, `check_task`, `create_task`, `fetch`, `get_evidence`, `ground_astranl`, `search`, `verify_astranl`.
 
-Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-09-28T20:39:33.288809+00:00).
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-09-29T03:43:43.812486+00:00).
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-09-29)
+## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-09-30)
 
 - **API version:** v4.0
 - **OpenAPI paths exposed:** 202
@@ -62,7 +62,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 - **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
 - **Controls (scoped, self-assessed, not certified):** EU AI Act Art. 50 disclosure in every interaction; GDPR: controller for coordination metadata only (https://astranl.com/privacy.html); money: AstraNL never holds third-party funds (https://astranl.com/.well-known/payment-truth.json)
 - **Fee:** 1% coordination fee - only on a paid outcome, in force since 2026-09-01
-- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-09-28T20:39:33.288809+00:00)
+- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-09-29T03:43:43.812486+00:00)
 - **License:** Apache-2.0
 
 ## Discovery
