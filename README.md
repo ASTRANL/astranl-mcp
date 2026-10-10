@@ -8,15 +8,15 @@ AstraNL turns an intent into verified real-world execution: a KvK-registered exe
 
 Fee: 1% coordination fee - only on a paid outcome, in force since 2026-09-01.
 
-Money: broker; custody never - AstraNL does not receive or hold the principal amount. Each order explicitly binds its payment rail and named provider. Optional Stripe uses the existing executor destination-charge model. Direct business-bank payment is independently initiated by the principal to the provider's verified business account.; Stripe rail only: existing hold-release terms apply. Ordinary bank transfers have no AstraNL hold, escrow, automatic release or automatic refund.. This is not insurance.
+Money: broker; custody never - AstraNL does not receive or hold the principal amount. Each order explicitly binds its payment rail and named provider. Optional Stripe uses the existing executor destination-charge model. Direct business-bank payment is independently initiated by the principal to the provider's verified business account.; Stripe rail only: existing hold-release terms apply. Ordinary bank transfers have no AstraNL hold, automatic release or automatic refund.. This is not insurance.
 
 Geography: ordering open to a principal anywhere; execution Netherlands, where KvK-registered executors stand (registry ID checked; each executor's verification state is shown on its card at /truth/executors.json - never a bare "verified"). a country is listed the day a registry-checked, payout-ready executor stands in it, never before.
 
 Public capabilities: `ask_astranl`, `check_counterparty_nl`, `check_task`, `construction_economy`, `construction_events`, `construction_laws`, `construction_leadtimes`, `construction_natura`, `construction_permits`, `construction_summary`, `construction_tenders`, `construction_zones`, `create_task`, `fetch`, `get_evidence`, `ground_astranl`, `record_counterparty_check`, `search`, `verify_astranl`.
 
-Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-10-09T01:44:16.677866+00:00).
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-10-10T01:38:52.342499+00:00).
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-10-09)
+## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-10-10)
 
 - **API version:** v4.0
 - **OpenAPI paths exposed:** 202
@@ -74,7 +74,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 - **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
 - **Controls (scoped, self-assessed, not certified):** EU AI Act Art. 50 disclosure in every interaction; GDPR: controller for coordination metadata only (https://astranl.com/privacy.html); money: AstraNL never holds third-party funds (https://astranl.com/.well-known/payment-truth.json)
 - **Fee:** 1% coordination fee - only on a paid outcome, in force since 2026-09-01
-- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-10-09T01:44:16.677866+00:00)
+- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-10-10T01:38:52.342499+00:00)
 - **License:** Apache-2.0
 
 ## Discovery
