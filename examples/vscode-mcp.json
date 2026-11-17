@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "astranl": {
+      "type": "http",
+      "url": "https://astranl.com/mcp/streamable"
+    }
+  }
+}
