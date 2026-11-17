@@ -1,6 +1,6 @@
 # AstraNL
 
-[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.astranl%2Fmcp%20v1.37.19-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=com.astranl/mcp&version=latest) [![astranl-mcp MCP server](https://glama.ai/mcp/servers/vxwvj77twe/badges/score.svg)](https://glama.ai/mcp/servers/vxwvj77twe) [![GitHub stars](https://img.shields.io/github/stars/ASTRANL/astranl-mcp?style=flat)](https://github.com/ASTRANL/astranl-mcp/stargazers) [![No API key](https://img.shields.io/badge/API%20key-not%20needed%20to%20connect-brightgreen)](#30-second-quickstart)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.astranl%2Fmcp%20v1.37.19-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=com.astranl/mcp&version=latest) [![GitHub stars](https://img.shields.io/github/stars/ASTRANL/astranl-mcp?style=flat)](https://github.com/ASTRANL/astranl-mcp/stargazers) [![No API key](https://img.shields.io/badge/API%20key-not%20needed%20to%20connect-brightgreen)](#30-second-quickstart)
 
 **No-key MCP server that gives AI agents source-linked Dutch real-world facts and coordination:** planning cost figures for construction jobs (not quotes), permit fees and municipal build rules, KvK, VAT and sanctions checks on a counterparty, live building-material checks, catalog offers, coordination of physical tasks with KvK-registered executors, certificates that record the fact of an agreement and machine-checkable evidence from a signed public log. Reading, asking and verifying need no key and cost nothing. Fee: 1% coordination fee - only on a paid outcome, in force since 2026-09-01. `order_materials`, `estimate_case_create` and `estimate_case_video` reuse a free agent key from `POST https://astranl.com/api/agents/register`.
 
@@ -70,6 +70,8 @@ The OpenAI Agents SDK takes the same dictionary: `HostedMCPTool(tool_config={...
 }
 ```
 
+More runnable examples: [examples/](examples/)
+
 ## Try it
 
 Ask your agent:
@@ -102,7 +104,7 @@ Canonical source of truth for every channel: https://astranl.com/.well-known/ast
 - **MCP tools advertised:** 41
 - **Dispatchable task classes:** 29
 - **Official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.astranl&version=latest):** `com.astranl/mcp` v1.37.19 is the latest active entry; 5 `com.astranl` servers are active in total
-- **Glama:** listed, score badge above (https://glama.ai/mcp/servers/vxwvj77twe)
+- **Glama:** not listed yet for this repository
 
 ## More ways to connect
 
