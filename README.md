@@ -86,7 +86,7 @@ Your client should call `nl_municipal_build_rules`, a read-only tool. It returns
 
 AstraNL MCP Server — Give AstraNL one real thing you need changed. It coordinates the rest. AstraNL is the neutral coordination and evidence layer between intent and real-world execution. It connects existing systems, agents and organisations to the right real-world capability - human, company, machine, robot, stock, transport or service - and returns a typed record of what was actually observed, agreed, executed and settled.
 
-AstraNL turns an intent into verified real-world execution: a KvK-registered executor performs the work; the client pays that provider directly on the agreed provider-owned business rail. Stripe is optional. AstraNL never receives or controls the work amount and invoices only its separate 1% coordination fee after a paid, confirmed outcome.
+AstraNL turns an intent into verified real-world execution: a KvK-registered executor (verification state on its public card) performs the errand; the principal's card hold sits on that executor's own Stripe account and is captured only after the principal confirms the proof agreed before the work; AstraNL receives only its coordination fee.
 
 Fee: 1% coordination fee - only on a paid outcome, in force since 2026-09-01.
 
@@ -96,7 +96,7 @@ Geography: ordering open to a principal anywhere; execution Netherlands, where K
 
 Public capabilities: `ask_astranl`, `check_counterparty_nl`, `check_estimate_materials`, `check_material`, `check_task`, `commitment_attest`, `commitment_confirm`, `commitment_verify`, `construction_economy`, `construction_events`, `construction_laws`, `construction_leadtimes`, `construction_natura`, `construction_permits`, `construction_summary`, `construction_tenders`, `construction_zones`, `coordination_contract`, `create_task`, `estimate_case_answer`, `estimate_case_create`, `estimate_case_files`, `estimate_case_status`, `estimate_case_video`, `estimate_cost`, `fetch`, `find_offers`, `get_evidence`, `ground_astranl`, `ground_citation`, `ground_component`, `housing_need`, `machines_search`, `market_indicators`, `network_door`, `nl_municipal_build_rules`, `order_materials`, `read_with_receipt`, `record_counterparty_check`, `search`, `verify_astranl`.
 
-Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-11-17T19:46:13.931865+00:00).
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-11-17T20:16:21.273396+00:00).
 
 ## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-11-17)
 
@@ -130,15 +130,6 @@ Connect `https://astranl.com/mcp/streamable?profile=counterparty`; this address 
 - A register or VAT confirmation says a registration or number exists; it does not confirm an invoice or its content.
 - ChatGPT, Codex and other MCP clients: https://astranl.com/check-counterparty/
 
-### Direct REST
-
-```bash
-curl -X POST https://astranl.com/capabilities/dispatch \
-     -H 'X-Agent-Key: YOUR_KEY' \
-     -H 'Content-Type: application/json' \
-     -d '{"task_class":"detect_language","input":"Bonjour"}'
-```
-
 ## Pricing manifest
 
 Live at https://astranl.com/capabilities/dispatch/manifest
@@ -149,8 +140,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 - **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
 - **Controls (scoped, self-assessed, not certified):** EU AI Act Art. 50 disclosure in every interaction; GDPR: controller for coordination metadata only (https://astranl.com/privacy.html); money: AstraNL never holds third-party funds (https://astranl.com/.well-known/payment-truth.json)
 - **Fee:** 1% coordination fee - only on a paid outcome, in force since 2026-09-01
-- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-11-17T19:46:13.931865+00:00)
-- **License:** Apache-2.0
+- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-11-17T20:16:21.273396+00:00)
 
 ## Discovery
 
