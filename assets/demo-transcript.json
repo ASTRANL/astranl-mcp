@@ -1,0 +1,271 @@
+{
+ "demo": "read-only live call made by the AstraNL maintainers; not a customer job",
+ "observed_at": "2026-11-17T20:03:44Z",
+ "client_started_at": "2026-11-17T20:03:37Z",
+ "endpoint": "https://astranl.com/mcp/streamable",
+ "api_key": "none",
+ "client": {
+  "name": "astranl-demo-client",
+  "version": "1.0",
+  "transport": "streamable HTTP, JSON-RPC 2.0, Python standard library urllib"
+ },
+ "latency_note": "latency_ms is the HTTP round trip measured by the client on the AstraNL host itself; astranl.com resolves to that machine, so internet transit is not included",
+ "agent_question": "Before I approve ASML Holding N.V. as a supplier: is the KvK registration active, does the VAT number pass VIES, and is there any EU sanctions or insolvency hit?",
+ "agent_question_note": "example question written for this demo; no customer, supplier or order is involved",
+ "steps": [
+  {
+   "step": "initialize",
+   "sent_at": "2026-11-17T20:03:37Z",
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "protocolVersion": "2025-06-18",
+     "capabilities": {},
+     "clientInfo": {
+      "name": "astranl-demo-client",
+      "version": "1.0"
+     }
+    }
+   },
+   "http_status": 200,
+   "latency_ms": 151,
+   "response_headers": {
+    "date": "Tue, 17 Nov 2026 20:03:37 GMT",
+    "content-type": "text/event-stream"
+   },
+   "result_trimmed": {
+    "protocolVersion": "2025-06-18",
+    "serverInfo": {
+     "name": "astranl-mcp",
+     "version": "1.37.43"
+    }
+   }
+  },
+  {
+   "step": "notifications/initialized",
+   "sent_at": "2026-11-17T20:03:37Z",
+   "request": {
+    "jsonrpc": "2.0",
+    "method": "notifications/initialized"
+   },
+   "http_status": 202,
+   "latency_ms": 22,
+   "response_headers": {
+    "date": "Tue, 17 Nov 2026 20:03:37 GMT",
+    "content-type": "application/json"
+   },
+   "raw_body": ""
+  },
+  {
+   "step": "tools/list",
+   "sent_at": "2026-11-17T20:03:37Z",
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/list",
+    "params": {}
+   },
+   "http_status": 200,
+   "latency_ms": 38,
+   "response_headers": {
+    "date": "Tue, 17 Nov 2026 20:03:37 GMT",
+    "content-type": "text/event-stream"
+   },
+   "tool_count": 41,
+   "tool_names": [
+    "ask_astranl",
+    "check_counterparty_nl",
+    "record_counterparty_check",
+    "create_task",
+    "check_task",
+    "get_evidence",
+    "verify_astranl",
+    "ground_astranl",
+    "ground_component",
+    "ground_citation",
+    "construction_summary",
+    "construction_permits",
+    "construction_leadtimes",
+    "construction_tenders",
+    "construction_laws",
+    "construction_economy",
+    "construction_zones",
+    "construction_natura",
+    "construction_events",
+    "nl_municipal_build_rules",
+    "check_material",
+    "check_estimate_materials",
+    "order_materials",
+    "find_offers",
+    "network_door",
+    "coordination_contract",
+    "read_with_receipt",
+    "estimate_case_create",
+    "estimate_case_status",
+    "estimate_case_answer",
+    "estimate_case_files",
+    "estimate_case_video",
+    "market_indicators",
+    "commitment_attest",
+    "commitment_confirm",
+    "commitment_verify",
+    "housing_need",
+    "machines_search",
+    "estimate_cost",
+    "search",
+    "fetch"
+   ]
+  },
+  {
+   "step": "tools/call check_counterparty_nl",
+   "sent_at": "2026-11-17T20:03:37Z",
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+     "name": "check_counterparty_nl",
+     "arguments": {
+      "kvk_number": "17085815",
+      "company_name": "ASML Holding N.V.",
+      "vat_number": "NL803441526B01",
+      "purpose": "approve supplier"
+     }
+    }
+   },
+   "http_status": 200,
+   "latency_ms": 7059,
+   "response_headers": {
+    "date": "Tue, 17 Nov 2026 20:03:37 GMT",
+    "content-type": "text/event-stream"
+   },
+   "raw_sse_body": "event: message\r\ndata: {\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"content\":[{\"text\":\"{\\\"tool\\\": \\\"check_counterparty_nl\\\", \\\"version\\\": \\\"4\\\", \\\"observed_at\\\": \\\"2026-11-17T20:03:44Z\\\", \\\"inputs\\\": {\\\"kvk_number\\\": \\\"17085815\\\", \\\"company_name\\\": \\\"ASML Holding N.V.\\\", \\\"vat_number\\\": \\\"NL803441526B01\\\", \\\"purpose\\\": \\\"approve supplier\\\"}, \\\"data_policy\\\": \\\"verdicts derived from the sources, not register data; read the registration itself at the KVK link\\\", \\\"registry\\\": {\\\"source\\\": \\\"KVK Handelsregister, Zoeken API, read live or from a cache of at most 10 minutes\\\", \\\"observed_at\\\": \\\"2026-11-17T20:03:37Z\\\", \\\"status\\\": \\\"found\\\", \\\"active_registration\\\": true, \\\"read_it_yourself\\\": \\\"https://www.kvk.nl/bestellen/#/17085815\\\"}, \\\"vat\\\": {\\\"source\\\": \\\"VIES (EU Commission)\\\", \\\"checked_at\\\": \\\"2026-11-17T20:03:38.163543+00:00\\\", \\\"status\\\": \\\"ok\\\", \\\"valid\\\": true, \\\"vat\\\": \\\"NL803441526B01\\\", \\\"vies_name_vs_register\\\": \\\"EXACT\\\"}, \\\"sanctions\\\": {\\\"source\\\": \\\"EU FSD consolidated sanctions list and US Consolidated Screening List\\\", \\\"checked_at\\\": \\\"2026-11-17T20:03:44.545029+00:00\\\", \\\"us_csl_refreshed\\\": \\\"2026-11-16T04:25:46.882916+00:00\\\", \\\"status\\\": \\\"ok\\\", \\\"hit_count\\\": 0, \\\"hits\\\": [], \\\"list_generated\\\": \\\"2026-10-23T17:05:43.888+02:00\\\", \\\"meaning\\\": \\\"candidates only - stop-and-verify, never accusation\\\", \\\"screened_forms\\\": 2, \\\"registered_names_candidates\\\": 0}, \\\"insolvency\\\": {\\\"source\\\": \\\"Centraal Insolventieregister (NL), Rechtspraak webservice\\\", \\\"checked_at\\\": \\\"2026-11-17T20:03:44.689421+00:00\\\", \\\"read_at_source\\\": \\\"https://insolventies.rechtspraak.nl/\\\", \\\"status\\\": \\\"ok\\\", \\\"found\\\": false, \\\"cases\\\": 0, \\\"meaning\\\": \\\"no insolvency publication under this KvK number at checked_at; a bankruptcy takes effect from the start of the day it is declared and can be published later; this says nothing about solvency\\\"}, \\\"name_check\\\": {\\\"result\\\": \\\"EXACT\\\", \\\"supplied_vs_vies_name\\\": \\\"EXACT\\\", \\\"rule\\\": \\\"case, punctuation and spacing ignored; one legal-form suffix B.V., BV, N.V., NV, V.O.F., VOF or C.V. at the end ignored; registered names include those of inactive registrations\\\"}, \\\"open_questions\\\": [], \\\"access_basis\\\": {\\\"status\\\": \\\"ok\\\", \\\"classes\\\": {\\\"A\\\": \\\"public registry fetched by protocol, no accountable gate\\\", \\\"C\\\": \\\"accountable access: fetched by protocol under AstraNL registered access, licence and purpose bound\\\"}, \\\"sources\\\": [{\\\"source_id\\\": \\\"nl_kvk_handelsregister_api\\\", \\\"evidence_class\\\": \\\"C\\\", \\\"accountable_holder\\\": \\\"AstraNL, Dutch eenmanszaak, KvK registered\\\", \\\"terms\\\": \\\"GDPR wherever natural persons appear; standard terms prohibit onward provision and impose additional reuse conditions.\\\", \\\"recheck\\\": \\\"answer valid only at observed_at; re-read before each consequential action or on a source change signal\\\"}, {\\\"source_id\\\": \\\"nl_rechtspraak_cir_webservice\\\", \\\"evidence_class\\\": \\\"C\\\", \\\"accountable_holder\\\": \\\"AstraNL, Dutch eenmanszaak, KvK registered\\\", \\\"terms\\\": \\\"onward delivery expressly permitted for informing commercial participants about insolvency; destroy data within six months after proceedings end.\\\", \\\"recheck\\\": \\\"per consequential action; personal data deleted within six months after proceedings end per CIR terms\\\"}, {\\\"source_id\\\": \\\"eu_vies\\\", \\\"evidence_class\\\": \\\"A\\\", \\\"accountable_holder\\\": null, \\\"terms\\\": \\\"public EU VAT validation service\\\", \\\"recheck\\\": \\\"re-read before each consequential action\\\"}, {\\\"source_id\\\": \\\"eu_consolidated_sanctions_list\\\", \\\"evidence_class\\\": \\\"A\\\", \\\"accountable_holder\\\": null, \\\"terms\\\": \\\"public EU list, read from the AstraNL mirror\\\", \\\"recheck\\\": \\\"re-read before each consequential action\\\"}], \\\"registry_sha256\\\": \\\"1ce25d4bcad0cdaf1a6986514fa7abb1a9e508ee70751132ba41dd0a2a059830\\\", \\\"principle\\\": \\\"https://astranl.com/spec/ACCOUNTABLE_ACCESS.md\\\", \\\"source_list\\\": \\\"https://astranl.com/spec/accountable_access_sources.json\\\"}, \\\"what_this_proves\\\": \\\"what the named official sources returned at observed_at for these inputs, and nothing more\\\", \\\"what_this_does_not_prove\\\": [\\\"who may sign or order for the company\\\", \\\"that a bank account or IBAN belongs to it\\\", \\\"solvency, credit risk or reliability\\\", \\\"that a document or email you hold is genuine or was sent by this company\\\", \\\"anything after observed_at; registers change\\\"], \\\"next_permitted_action\\\": \\\"attach check_id and this signed result to your own record, then take your step; if open_questions lists anything, stop and ask a human before paying or signing; repeat the check when it is older than your own tolerance, at most 7 days for a payment\\\", \\\"reference\\\": \\\"https://astranl.com/spec/VERIFY_WITHOUT_TRUST.md\\\", \\\"check_id\\\": \\\"ASTRA-K-B21F4BD346A24DA3\\\", \\\"record\\\": {\\\"reference\\\": null, \\\"status\\\": \\\"NOT_RECORDED\\\", \\\"how\\\": \\\"call record_counterparty_check with check_id within 48 hours when a colleague, approver or auditor must verify this later\\\"}, \\\"verify\\\": {\\\"what\\\": \\\"a colleague, approver or auditor can check later, without trusting AstraNL, that this exact result was recorded at recorded_at\\\", \\\"step_1\\\": \\\"after record_counterparty_check, call verify_astranl with ref = its reference, or run python3 astranl_verify.py <reference> from https://astranl.com/spec/ ; integrity must PASS or SIGNED_PENDING_INCLUSION\\\", \\\"step_2\\\": \\\"compute sha256 of the canonical JSON of this result without the keys check_id, record and verify (keys sorted, separators comma and colon, UTF-8, non-ASCII not escaped); it must equal payload.result_sha256 of that record\\\", \\\"result_sha256\\\": \\\"b21f4bd346a24da336a3b96e98925b49f90b094ffebf348ebe23d56d9e45dd24\\\", \\\"meaning\\\": \\\"a match proves the sources said this at observed_at; it proves nothing about the counterparty beyond that\\\"}}\",\"type\":\"text\"}],\"isError\":false}}\r\n\r\n",
+   "tool_result": {
+    "tool": "check_counterparty_nl",
+    "version": "4",
+    "observed_at": "2026-11-17T20:03:44Z",
+    "inputs": {
+     "kvk_number": "17085815",
+     "company_name": "ASML Holding N.V.",
+     "vat_number": "NL803441526B01",
+     "purpose": "approve supplier"
+    },
+    "data_policy": "verdicts derived from the sources, not register data; read the registration itself at the KVK link",
+    "registry": {
+     "source": "KVK Handelsregister, Zoeken API, read live or from a cache of at most 10 minutes",
+     "observed_at": "2026-11-17T20:03:37Z",
+     "status": "found",
+     "active_registration": true,
+     "read_it_yourself": "https://www.kvk.nl/bestellen/#/17085815"
+    },
+    "vat": {
+     "source": "VIES (EU Commission)",
+     "checked_at": "2026-11-17T20:03:38.163543+00:00",
+     "status": "ok",
+     "valid": true,
+     "vat": "NL803441526B01",
+     "vies_name_vs_register": "EXACT"
+    },
+    "sanctions": {
+     "source": "EU FSD consolidated sanctions list and US Consolidated Screening List",
+     "checked_at": "2026-11-17T20:03:44.545029+00:00",
+     "us_csl_refreshed": "2026-11-16T04:25:46.882916+00:00",
+     "status": "ok",
+     "hit_count": 0,
+     "hits": [],
+     "list_generated": "2026-10-23T17:05:43.888+02:00",
+     "meaning": "candidates only - stop-and-verify, never accusation",
+     "screened_forms": 2,
+     "registered_names_candidates": 0
+    },
+    "insolvency": {
+     "source": "Centraal Insolventieregister (NL), Rechtspraak webservice",
+     "checked_at": "2026-11-17T20:03:44.689421+00:00",
+     "read_at_source": "https://insolventies.rechtspraak.nl/",
+     "status": "ok",
+     "found": false,
+     "cases": 0,
+     "meaning": "no insolvency publication under this KvK number at checked_at; a bankruptcy takes effect from the start of the day it is declared and can be published later; this says nothing about solvency"
+    },
+    "name_check": {
+     "result": "EXACT",
+     "supplied_vs_vies_name": "EXACT",
+     "rule": "case, punctuation and spacing ignored; one legal-form suffix B.V., BV, N.V., NV, V.O.F., VOF or C.V. at the end ignored; registered names include those of inactive registrations"
+    },
+    "open_questions": [],
+    "access_basis": {
+     "status": "ok",
+     "classes": {
+      "A": "public registry fetched by protocol, no accountable gate",
+      "C": "accountable access: fetched by protocol under AstraNL registered access, licence and purpose bound"
+     },
+     "sources": [
+      {
+       "source_id": "nl_kvk_handelsregister_api",
+       "evidence_class": "C",
+       "accountable_holder": "AstraNL, Dutch eenmanszaak, KvK registered",
+       "terms": "GDPR wherever natural persons appear; standard terms prohibit onward provision and impose additional reuse conditions.",
+       "recheck": "answer valid only at observed_at; re-read before each consequential action or on a source change signal"
+      },
+      {
+       "source_id": "nl_rechtspraak_cir_webservice",
+       "evidence_class": "C",
+       "accountable_holder": "AstraNL, Dutch eenmanszaak, KvK registered",
+       "terms": "onward delivery expressly permitted for informing commercial participants about insolvency; destroy data within six months after proceedings end.",
+       "recheck": "per consequential action; personal data deleted within six months after proceedings end per CIR terms"
+      },
+      {
+       "source_id": "eu_vies",
+       "evidence_class": "A",
+       "accountable_holder": null,
+       "terms": "public EU VAT validation service",
+       "recheck": "re-read before each consequential action"
+      },
+      {
+       "source_id": "eu_consolidated_sanctions_list",
+       "evidence_class": "A",
+       "accountable_holder": null,
+       "terms": "public EU list, read from the AstraNL mirror",
+       "recheck": "re-read before each consequential action"
+      }
+     ],
+     "registry_sha256": "1ce25d4bcad0cdaf1a6986514fa7abb1a9e508ee70751132ba41dd0a2a059830",
+     "principle": "https://astranl.com/spec/ACCOUNTABLE_ACCESS.md",
+     "source_list": "https://astranl.com/spec/accountable_access_sources.json"
+    },
+    "what_this_proves": "what the named official sources returned at observed_at for these inputs, and nothing more",
+    "what_this_does_not_prove": [
+     "who may sign or order for the company",
+     "that a bank account or IBAN belongs to it",
+     "solvency, credit risk or reliability",
+     "that a document or email you hold is genuine or was sent by this company",
+     "anything after observed_at; registers change"
+    ],
+    "next_permitted_action": "attach check_id and this signed result to your own record, then take your step; if open_questions lists anything, stop and ask a human before paying or signing; repeat the check when it is older than your own tolerance, at most 7 days for a payment",
+    "reference": "https://astranl.com/spec/VERIFY_WITHOUT_TRUST.md",
+    "check_id": "ASTRA-K-B21F4BD346A24DA3",
+    "record": {
+     "reference": null,
+     "status": "NOT_RECORDED",
+     "how": "call record_counterparty_check with check_id within 48 hours when a colleague, approver or auditor must verify this later"
+    },
+    "verify": {
+     "what": "a colleague, approver or auditor can check later, without trusting AstraNL, that this exact result was recorded at recorded_at",
+     "step_1": "after record_counterparty_check, call verify_astranl with ref = its reference, or run python3 astranl_verify.py <reference> from https://astranl.com/spec/ ; integrity must PASS or SIGNED_PENDING_INCLUSION",
+     "step_2": "compute sha256 of the canonical JSON of this result without the keys check_id, record and verify (keys sorted, separators comma and colon, UTF-8, non-ASCII not escaped); it must equal payload.result_sha256 of that record",
+     "result_sha256": "b21f4bd346a24da336a3b96e98925b49f90b094ffebf348ebe23d56d9e45dd24",
+     "meaning": "a match proves the sources said this at observed_at; it proves nothing about the counterparty beyond that"
+    }
+   }
+  }
+ ],
+ "client_side_check": {
+  "what": "sha256 of the canonical JSON of the tool result without the keys check_id, record and verify, keys sorted, separators comma and colon, UTF-8, non-ASCII not escaped; computed by this demo client",
+  "result_sha256_in_response": "b21f4bd346a24da336a3b96e98925b49f90b094ffebf348ebe23d56d9e45dd24",
+  "result_sha256_recomputed": "b21f4bd346a24da336a3b96e98925b49f90b094ffebf348ebe23d56d9e45dd24",
+  "match": true
+ },
+ "full_transcript_kept_at": "AstraNL server, runtime/cobuild/1299/demo/transcript.json"
+}
