@@ -1,0 +1,360 @@
+{
+  "demo": "read-only live call made by the AstraNL maintainers; not a customer job",
+  "observed_at": "2026-11-17T19:59:29Z",
+  "endpoint": "https://astranl.com/mcp/streamable",
+  "trimmed": "server instructions shortened to 300 characters; tools/list reduced to name, title and readOnlyHint",
+  "initialize": {
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "protocolVersion": "2025-06-18",
+        "capabilities": {},
+        "clientInfo": {
+          "name": "astranl-examples-check",
+          "version": "1.0"
+        }
+      }
+    },
+    "http_status": 200,
+    "latency_ms": 106,
+    "content_type": "text/event-stream",
+    "mcp_session_id_returned": false,
+    "result": {
+      "protocolVersion": "2025-06-18",
+      "serverInfo": {
+        "name": "astranl-mcp",
+        "version": "1.37.43"
+      },
+      "capabilities": {
+        "experimental": {},
+        "tools": {
+          "listChanged": false
+        }
+      },
+      "instructions_first_300_chars": "AstraNL connects a real task to a verified real-world outcome in the Netherlands and returns evidence another system can check. If you do not know which tool fits, call ask_astranl with your task in plain words: it returns which tool to call, what to supply, what can and cannot be verified, and whet"
+    }
+  },
+  "notifications_initialized": {
+    "request": {
+      "jsonrpc": "2.0",
+      "method": "notifications/initialized"
+    },
+    "http_status": 202
+  },
+  "tools_list": {
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "method": "tools/list",
+      "params": {}
+    },
+    "http_status": 200,
+    "latency_ms": 22,
+    "tool_count": 41,
+    "nextCursor": null,
+    "tools": [
+      {
+        "name": "ask_astranl",
+        "title": "Route a task to the right AstraNL tool",
+        "readOnlyHint": true
+      },
+      {
+        "name": "check_counterparty_nl",
+        "title": "Check a Dutch or EU counterparty",
+        "readOnlyHint": true
+      },
+      {
+        "name": "record_counterparty_check",
+        "title": "Record a counterparty check for later verification",
+        "readOnlyHint": false
+      },
+      {
+        "name": "create_task",
+        "title": "Create a coordinated real-world task",
+        "readOnlyHint": false
+      },
+      {
+        "name": "check_task",
+        "title": "Check task state",
+        "readOnlyHint": true
+      },
+      {
+        "name": "get_evidence",
+        "title": "Get verifiable evidence",
+        "readOnlyHint": true
+      },
+      {
+        "name": "verify_astranl",
+        "title": "Verify an AstraNL reference",
+        "readOnlyHint": true
+      },
+      {
+        "name": "ground_astranl",
+        "title": "Source-linked context for an answer",
+        "readOnlyHint": true
+      },
+      {
+        "name": "ground_component",
+        "title": "Ground a component in live market reality",
+        "readOnlyHint": false
+      },
+      {
+        "name": "ground_citation",
+        "title": "Check a scientific reference for retraction and correction notices",
+        "readOnlyHint": false
+      },
+      {
+        "name": "construction_summary",
+        "title": "Dutch construction overview",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_permits",
+        "title": "Dutch permit publications per municipality",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_leadtimes",
+        "title": "Dutch permit lead times",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_tenders",
+        "title": "Open Dutch public works tenders",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_laws",
+        "title": "Dutch construction law calendar",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_economy",
+        "title": "Dutch construction economy (CBS)",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_zones",
+        "title": "Dutch zero- and low-emission zones",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_natura",
+        "title": "Natura 2000 sites in the Netherlands",
+        "readOnlyHint": true
+      },
+      {
+        "name": "construction_events",
+        "title": "Dutch construction signal feed",
+        "readOnlyHint": true
+      },
+      {
+        "name": "nl_municipal_build_rules",
+        "title": "Dutch municipal permit fee and skip rule for a building job",
+        "readOnlyHint": true
+      },
+      {
+        "name": "check_material",
+        "title": "Check a building material in live store reality",
+        "readOnlyHint": true
+      },
+      {
+        "name": "check_estimate_materials",
+        "title": "Check the materials of an estimate",
+        "readOnlyHint": true
+      },
+      {
+        "name": "order_materials",
+        "title": "Prepare project materials for administrator approval",
+        "readOnlyHint": false
+      },
+      {
+        "name": "find_offers",
+        "title": "Find real offers for a demand",
+        "readOnlyHint": true
+      },
+      {
+        "name": "network_door",
+        "title": "Read how a seller network can be reached",
+        "readOnlyHint": true
+      },
+      {
+        "name": "coordination_contract",
+        "title": "Read the six-step coordination contract",
+        "readOnlyHint": true
+      },
+      {
+        "name": "read_with_receipt",
+        "title": "Read a result with a digest receipt",
+        "readOnlyHint": false
+      },
+      {
+        "name": "estimate_case_create",
+        "title": "Open a reviewed estimate case",
+        "readOnlyHint": false
+      },
+      {
+        "name": "estimate_case_status",
+        "title": "Read the status of an estimate case",
+        "readOnlyHint": true
+      },
+      {
+        "name": "estimate_case_answer",
+        "title": "Answer the questions of an estimate case",
+        "readOnlyHint": false
+      },
+      {
+        "name": "estimate_case_files",
+        "title": "Add photos or plans to an estimate case",
+        "readOnlyHint": false
+      },
+      {
+        "name": "estimate_case_video",
+        "title": "Send a video for an estimate case",
+        "readOnlyHint": false
+      },
+      {
+        "name": "market_indicators",
+        "title": "Read market indicators",
+        "readOnlyHint": true
+      },
+      {
+        "name": "commitment_attest",
+        "title": "Record an agreement certificate",
+        "readOnlyHint": false
+      },
+      {
+        "name": "commitment_confirm",
+        "title": "Answer an agreement certificate",
+        "readOnlyHint": false
+      },
+      {
+        "name": "commitment_verify",
+        "title": "Verify an agreement certificate",
+        "readOnlyHint": true
+      },
+      {
+        "name": "housing_need",
+        "title": "Register a housing need",
+        "readOnlyHint": false
+      },
+      {
+        "name": "machines_search",
+        "title": "Search machines and robots for a task",
+        "readOnlyHint": true
+      },
+      {
+        "name": "estimate_cost",
+        "title": "Estimate task cost",
+        "readOnlyHint": true
+      },
+      {
+        "name": "search",
+        "title": "Search AstraNL",
+        "readOnlyHint": true
+      },
+      {
+        "name": "fetch",
+        "title": "Fetch AstraNL record",
+        "readOnlyHint": true
+      }
+    ]
+  },
+  "profiles_observed_same_run": {
+    "default": {
+      "url": "https://astranl.com/mcp/streamable",
+      "serverInfo": {
+        "name": "astranl-mcp",
+        "version": "1.37.43"
+      },
+      "tool_count": 41,
+      "tools": [
+        "ask_astranl",
+        "check_counterparty_nl",
+        "check_estimate_materials",
+        "check_material",
+        "check_task",
+        "commitment_attest",
+        "commitment_confirm",
+        "commitment_verify",
+        "construction_economy",
+        "construction_events",
+        "construction_laws",
+        "construction_leadtimes",
+        "construction_natura",
+        "construction_permits",
+        "construction_summary",
+        "construction_tenders",
+        "construction_zones",
+        "coordination_contract",
+        "create_task",
+        "estimate_case_answer",
+        "estimate_case_create",
+        "estimate_case_files",
+        "estimate_case_status",
+        "estimate_case_video",
+        "estimate_cost",
+        "fetch",
+        "find_offers",
+        "get_evidence",
+        "ground_astranl",
+        "ground_citation",
+        "ground_component",
+        "housing_need",
+        "machines_search",
+        "market_indicators",
+        "network_door",
+        "nl_municipal_build_rules",
+        "order_materials",
+        "read_with_receipt",
+        "record_counterparty_check",
+        "search",
+        "verify_astranl"
+      ]
+    },
+    "protocol": {
+      "url": "https://astranl.com/mcp/streamable?profile=protocol",
+      "serverInfo": {
+        "name": "astranl-mcp",
+        "version": "1.0.0"
+      },
+      "tool_count": 18,
+      "tools": [
+        "ask_astranl",
+        "check_counterparty_nl",
+        "check_material",
+        "check_task",
+        "commitment_attest",
+        "commitment_confirm",
+        "commitment_verify",
+        "coordination_contract",
+        "create_task",
+        "estimate_cost",
+        "find_offers",
+        "get_evidence",
+        "ground_astranl",
+        "network_door",
+        "nl_municipal_build_rules",
+        "read_with_receipt",
+        "record_counterparty_check",
+        "verify_astranl"
+      ]
+    },
+    "counterparty": {
+      "url": "https://astranl.com/mcp/streamable?profile=counterparty",
+      "serverInfo": {
+        "name": "astranl-mcp",
+        "version": "1.37.43"
+      },
+      "tool_count": 4,
+      "tools": [
+        "check_counterparty_nl",
+        "read_with_receipt",
+        "record_counterparty_check",
+        "verify_astranl"
+      ]
+    }
+  }
+}
