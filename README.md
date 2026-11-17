@@ -40,27 +40,7 @@ claude mcp add --transport http astranl https://astranl.com/mcp/streamable
 
 **ChatGPT** (developer mode): create a connector with the server URL and no authentication.
 
-**OpenAI Responses API** (remote MCP)
-
-```python
-from openai import OpenAI
-
-client = OpenAI()
-resp = client.responses.create(
-    model="gpt-5",  # any Responses API model that supports the mcp tool
-    tools=[{
-        "type": "mcp",
-        "server_label": "astranl",
-        "server_url": "https://astranl.com/mcp/streamable",
-        "allowed_tools": ["nl_municipal_build_rules", "estimate_cost", "check_counterparty_nl"],
-        "require_approval": "never",
-    }],
-    input="What permit fee does Zaanstad charge for a renovation with EUR 50,000 building cost?",
-)
-print(resp.output_text)
-```
-
-The OpenAI Agents SDK takes the same dictionary: `HostedMCPTool(tool_config={...})`.
+**OpenAI Responses API and Agents SDK** (remote MCP tool with `server_url`): runnable script in [examples/openai_responses_mcp.py](examples/openai_responses_mcp.py).
 
 **Clients that only speak stdio**
 
@@ -86,7 +66,7 @@ Your client should call `nl_municipal_build_rules`, a read-only tool. It returns
 
 AstraNL MCP Server — Give AstraNL one real thing you need changed. It coordinates the rest. AstraNL is the neutral coordination and evidence layer between intent and real-world execution. It connects existing systems, agents and organisations to the right real-world capability - human, company, machine, robot, stock, transport or service - and returns a typed record of what was actually observed, agreed, executed and settled.
 
-AstraNL turns an intent into verified real-world execution: a KvK-registered executor (verification state on its public card) performs the errand; the principal's card hold sits on that executor's own Stripe account and is captured only after the principal confirms the proof agreed before the work; AstraNL receives only its coordination fee.
+AstraNL turns an intent into verified real-world execution: a KvK-registered executor performs the work; the client pays that provider directly on the agreed provider-owned business rail. Stripe is optional. AstraNL never receives or controls the work amount and invoices only its separate 1% coordination fee after a paid, confirmed outcome.
 
 Fee: 1% coordination fee - only on a paid outcome, in force since 2026-09-01.
 
