@@ -1,0 +1,97 @@
+{
+  "demo": "read-only live call made by the AstraNL maintainers; not a customer job",
+  "observed_at": "2026-11-17T20:00:52Z",
+  "endpoint": "https://astranl.com/mcp/streamable",
+  "transport": "streamable HTTP, POST, response Content-Type text/event-stream",
+  "flow": "initialize -> notifications/initialized -> tools/call, stateless, no Mcp-Session-Id issued",
+  "http_status": 200,
+  "latency_ms": 1458,
+  "trimmed": "result_parsed keeps the verdict sections; access_basis, reference and verify instructions omitted",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "check_counterparty_nl",
+      "arguments": {
+        "kvk_number": "17001910",
+        "company_name": "Koninklijke Philips N.V.",
+        "purpose": "read-only documentation demo by the AstraNL maintainers"
+      }
+    }
+  },
+  "response_envelope": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+      "isError": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "<JSON string, parsed and trimmed in result_parsed>"
+        }
+      ]
+    }
+  },
+  "result_parsed": {
+    "tool": "check_counterparty_nl",
+    "version": "4",
+    "observed_at": "2026-11-17T20:00:52Z",
+    "data_policy": "verdicts derived from the sources, not register data; read the registration itself at the KVK link",
+    "registry": {
+      "source": "KVK Handelsregister, Zoeken API, read live or from a cache of at most 10 minutes",
+      "observed_at": "2026-11-17T20:00:51Z",
+      "status": "found",
+      "active_registration": true,
+      "read_it_yourself": "https://www.kvk.nl/bestellen/#/17001910"
+    },
+    "vat": {
+      "status": "not_checked",
+      "reason": "no vat_number supplied"
+    },
+    "sanctions": {
+      "source": "EU FSD consolidated sanctions list and US Consolidated Screening List",
+      "checked_at": "2026-11-17T20:00:51.816509+00:00",
+      "us_csl_refreshed": "2026-11-16T04:25:46.882916+00:00",
+      "status": "ok",
+      "hit_count": 0,
+      "hits": [],
+      "list_generated": "2026-10-23T17:05:43.888+02:00",
+      "meaning": "candidates only - stop-and-verify, never accusation",
+      "screened_forms": 2,
+      "registered_names_candidates": 0
+    },
+    "insolvency": {
+      "source": "Centraal Insolventieregister (NL), Rechtspraak webservice",
+      "checked_at": "2026-11-17T20:00:52.796650+00:00",
+      "read_at_source": "https://insolventies.rechtspraak.nl/",
+      "status": "ok",
+      "found": false,
+      "cases": 0,
+      "meaning": "no insolvency publication under this KvK number at checked_at; a bankruptcy takes effect from the start of the day it is declared and can be published later; this says nothing about solvency"
+    },
+    "name_check": {
+      "result": "EXACT",
+      "supplied_vs_vies_name": "NOT_CHECKED",
+      "rule": "case, punctuation and spacing ignored; one legal-form suffix B.V., BV, N.V., NV, V.O.F., VOF or C.V. at the end ignored; registered names include those of inactive registrations"
+    },
+    "open_questions": [
+      "VAT not checked: no vat_number supplied"
+    ],
+    "what_this_proves": "what the named official sources returned at observed_at for these inputs, and nothing more",
+    "what_this_does_not_prove": [
+      "who may sign or order for the company",
+      "that a bank account or IBAN belongs to it",
+      "solvency, credit risk or reliability",
+      "that a document or email you hold is genuine or was sent by this company",
+      "anything after observed_at; registers change"
+    ],
+    "next_permitted_action": "attach check_id and this signed result to your own record, then take your step; if open_questions lists anything, stop and ask a human before paying or signing; repeat the check when it is older than your own tolerance, at most 7 days for a payment",
+    "check_id": "ASTRA-K-415021CAA7F53D10",
+    "record": {
+      "reference": null,
+      "status": "NOT_RECORDED",
+      "how": "call record_counterparty_check with check_id within 48 hours when a colleague, approver or auditor must verify this later"
+    }
+  }
+}
