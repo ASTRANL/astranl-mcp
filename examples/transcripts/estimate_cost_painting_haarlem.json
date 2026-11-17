@@ -1,0 +1,108 @@
+{
+  "demo": "read-only live call made by the AstraNL maintainers; not a customer job",
+  "observed_at": "2026-11-17T20:00:52Z",
+  "endpoint": "https://astranl.com/mcp/streamable",
+  "transport": "streamable HTTP, POST, response Content-Type text/event-stream",
+  "flow": "initialize -> notifications/initialized -> tools/call, stateless, no Mcp-Session-Id issued",
+  "http_status": 200,
+  "latency_ms": 426,
+  "trimmed": "result_parsed keeps the cost figures, the first 2 material lines and the disclaimers; labour and source sections omitted",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "estimate_cost",
+      "arguments": {
+        "category": "painting",
+        "area_m2": 40,
+        "location": "Haarlem"
+      }
+    }
+  },
+  "response_envelope": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+      "isError": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "<JSON string, parsed and trimmed in result_parsed>"
+        }
+      ]
+    }
+  },
+  "result_parsed": {
+    "estimate": {
+      "category": "painting",
+      "area_m2": 40.0,
+      "labor_hours": 12.0,
+      "labor_rate": 53.87,
+      "location_mult": 1.0,
+      "labor_cost": 646.44,
+      "material_cost": 104.48,
+      "total": 750.92,
+      "timeline_days": 2,
+      "arithmetic_check": {
+        "labor_cost_equals_hours_x_rate_x_mult": true,
+        "total_equals_material_plus_labor": true
+      },
+      "computed_at": "2026-11-17T20:00:52Z",
+      "materials_first_2_of_5": [
+        {
+          "name": "Interior paint 10L",
+          "name_nl": "binnenverf 10 liter muurverf",
+          "unit": "bucket",
+          "quantity": 1,
+          "unit_price": 45,
+          "total": 45,
+          "buy_url": "https://www.gamma.nl/assortiment/k/verf-behang-wandbekleding/verf/muurverf",
+          "supplier": "Gamma",
+          "price_source": "indicative",
+          "price_basis": "AstraNL planning price table (core/calculator_api.py estimate_materials), unchanged since at least 2026-09-29; no store read and no publisher behind it; a placeholder, not a store price",
+          "price_basis_date": "2026-09-29",
+          "buy_url_kind": "category_page",
+          "read_at": null,
+          "vat_basis": "unknown",
+          "quantity_basis": "ASSUMPTION: recipe factor per m2 with waste allowance, rounded up to whole packs"
+        },
+        {
+          "name": "Primer 5L",
+          "name_nl": "grondverf primer 5 liter",
+          "unit": "bucket",
+          "quantity": 1,
+          "unit_price": 37.99,
+          "total": 37.99,
+          "buy_url": "https://partner.mastertools.nl/c?c=39437&m=2447269&a=510484&r=&u=https%3A%2F%2Fmastertools.nl%2Fnl_nl%2Fproduct%2F4tecx-voorstrijk-4039000278",
+          "supplier": "Mastertools",
+          "price_source": "live_read",
+          "price_basis": "AstraNL planning price table (core/calculator_api.py estimate_materials), unchanged since at least 2026-09-29; no store read and no publisher behind it; a placeholder, not a store price",
+          "price_basis_date": "2026-09-29",
+          "buy_url_kind": "product_page",
+          "source": "feed",
+          "store": "Mastertools",
+          "read_at": "2026-11-17 05:32:57",
+          "product_title": "4tecx 5L Voorstrijk Wit Dekkend",
+          "product_url": "https://partner.mastertools.nl/c?c=39437&m=2447269&a=510484&r=&u=https%3A%2F%2Fmastertools.nl%2Fnl_nl%2Fproduct%2F4tecx-voorstrijk-4039000278",
+          "vat_basis": "incl VAT",
+          "selection_rule": "lowest-priced fresh, available, non-sample offer whose title holds all of ['voorstrijk']",
+          "quantity_basis": "ASSUMPTION: recipe factor per m2 with waste allowance, rounded up to whole packs"
+        }
+      ],
+      "trust_disclaimers": [
+        "Material quantities are estimates with standard waste allowance.",
+        "Lines with price_source live_read carry the store, read time and product link of that read; lines with price_source indicative are placeholders, not store prices.",
+        "Final price confirmed by store at checkout."
+      ]
+    },
+    "top_level_keys": [
+      "estimate",
+      "robot_comparison",
+      "data_basis",
+      "reviewed_estimate",
+      "fee",
+      "next"
+    ]
+  }
+}
