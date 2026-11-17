@@ -1,0 +1,71 @@
+{
+  "demo": "read-only live call made by the AstraNL maintainers; not a customer job",
+  "observed_at": "2026-11-17T20:00:51Z",
+  "endpoint": "https://astranl.com/mcp/streamable",
+  "transport": "streamable HTTP, POST, response Content-Type text/event-stream",
+  "flow": "initialize -> notifications/initialized -> tools/call, stateless, no Mcp-Session-Id issued",
+  "http_status": 200,
+  "latency_ms": 198,
+  "trimmed": "not trimmed: result_parsed is the full tool result",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "nl_municipal_build_rules",
+      "arguments": {
+        "municipality": "Amsterdam",
+        "bouwkosten_eur": 12000
+      }
+    }
+  },
+  "response_envelope": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+      "isError": false,
+      "content": [
+        {
+          "type": "text",
+          "text": "<JSON string, parsed and trimmed in result_parsed>"
+        }
+      ]
+    }
+  },
+  "result_parsed": {
+    "ok": true,
+    "municipality": "Amsterdam",
+    "code": "GM0363",
+    "leges": {
+      "bouwkosten_eur_excl_vat": 12000.0,
+      "regulation": "Algemene legesverordening Amsterdam 2026, tarieventabel hoofdstuk 3",
+      "article": "tarieventabel 3.5.1",
+      "source_url": "https://lokaleregelgeving.overheid.nl/CVDR747167/6",
+      "read_at": "2026-10-13",
+      "canon_confidence": "verified_on_source",
+      "source_check": "PASS",
+      "status": "SOURCED",
+      "fee_eur": 100.0,
+      "fee_eur_range": null,
+      "basis": "bouwkosten_excl_vat",
+      "note": "technical building activity only; a spatial part, if needed, is charged on top"
+    },
+    "container": {
+      "rule": "always",
+      "product": "objectvergunning (vergunning voorwerpen op de weg)",
+      "condition": "APV 4.3 forbids placing objects on the road without a vergunning of the college (objectvergunning); only items placed briefly for work including loading and unloading and removed immediately are exempt; the college may designate exempt categories (art. 4.5), not checked here. Amsterdam levies no precario on land objects since 2016.",
+      "fee_eur": 181.3,
+      "precario_eur_per_m2_week": null,
+      "legal_basis": "APV Amsterdam 2008 art. 4.3; Algemene legesverordening Amsterdam 2026 tarieventabel 7.1",
+      "source_url": "https://lokaleregelgeving.overheid.nl/CVDR72510/56",
+      "read_at": "2026-10-13",
+      "quote_found_in_source": true
+    },
+    "pages": {
+      "leges": "https://astranl.com/en/leges/amsterdam/",
+      "container": "https://astranl.com/en/container/amsterdam/"
+    },
+    "next": "to find an executor for this job: https://astranl.com/en/do/ or the coordination_open_case tool",
+    "disclaimer": "the municipality decides; this is a reading of its regulation, not a decision"
+  }
+}
