@@ -1,0 +1,54 @@
+name: Broken tool report
+description: A tool on https://astranl.com/mcp/streamable failed, timed out or returned something wrong.
+title: "[bug] <tool name>: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste real inputs and outputs only. This issue is public: remove personal data, API keys and agent keys first.
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+      description: Exactly as tools/list returns it.
+      placeholder: nl_municipal_build_rules
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input
+      description: The arguments you sent.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The tool result or error you received, including any request or receipt id. Trim very long results.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What you expected, and the official source that shows it.
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: Client and transport
+      placeholder: Claude Code, Streamable HTTP
+    validations:
+      required: false
+  - type: input
+    id: when
+    attributes:
+      label: When (UTC)
+      placeholder: 2026-11-17T20:00Z
+    validations:
+      required: false
