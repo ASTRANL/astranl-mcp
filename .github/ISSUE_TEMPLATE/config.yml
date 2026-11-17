@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ask AstraNL a question
+    url: https://astranl.com/ask/
+    about: Questions about using AstraNL rather than a broken tool.
+  - name: Canonical facts about AstraNL
+    url: https://astranl.com/.well-known/astranl-facts.json
+    about: Fee, money model, geography, contact address and public tools exactly as AstraNL publishes them.
