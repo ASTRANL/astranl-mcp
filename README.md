@@ -74,18 +74,18 @@ Money: broker; custody never - AstraNL does not receive or hold the principal am
 
 Geography: ordering open to a principal anywhere; execution Netherlands, where KvK-registered executors stand (registry ID checked; each executor's verification state is shown on its card at /truth/executors.json - never a bare "verified"). A country is listed the day a registry-checked, payout-ready executor stands in it, never before.
 
-Public capabilities: `ask_astranl`, `check_counterparty_nl`, `check_estimate_materials`, `check_material`, `check_task`, `commitment_attest`, `commitment_confirm`, `commitment_verify`, `construction_economy`, `construction_events`, `construction_laws`, `construction_leadtimes`, `construction_natura`, `construction_permits`, `construction_summary`, `construction_tenders`, `construction_zones`, `coordination_contract`, `create_task`, `estimate_case_answer`, `estimate_case_create`, `estimate_case_files`, `estimate_case_status`, `estimate_case_video`, `estimate_cost`, `fetch`, `find_offers`, `get_evidence`, `ground_astranl`, `ground_citation`, `ground_component`, `housing_need`, `machines_search`, `market_indicators`, `network_door`, `nl_municipal_build_rules`, `order_materials`, `read_with_receipt`, `record_counterparty_check`, `search`, `verify_astranl`.
+Public capabilities: `ask_astranl`, `astranl_contractor_check_nl`, `astranl_material_price_nl`, `astranl_permit_rules_nl`, `astranl_renovation_estimate_nl`, `astranl_verify_receipt`, `check_counterparty_nl`, `check_estimate_materials`, `check_material`, `check_task`, `commitment_attest`, `commitment_confirm`, `commitment_verify`, `construction_economy`, `construction_events`, `construction_laws`, `construction_leadtimes`, `construction_natura`, `construction_permits`, `construction_summary`, `construction_tenders`, `construction_zones`, `coordination_contract`, `create_task`, `estimate_case_answer`, `estimate_case_create`, `estimate_case_files`, `estimate_case_status`, `estimate_case_video`, `estimate_cost`, `fetch`, `find_offers`, `get_evidence`, `ground_astranl`, `ground_citation`, `ground_component`, `housing_need`, `machines_search`, `market_indicators`, `network_door`, `nl_municipal_build_rules`, `order_materials`, `read_with_receipt`, `record_counterparty_check`, `rfq_list`, `rfq_respond`, `rfq_status`, `rfq_verify`, `search`, `verify_astranl`.
 
-Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-11-24T01:36:29.251430+00:00).
+Canonical source of truth for every channel: https://astranl.com/.well-known/astranl-facts.json (canon block, generated 2026-11-25T01:42:34.886921+00:00).
 
-## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-11-24)
+## Live metrics (auto-refreshed daily 02:00 UTC; last refresh 2026-11-25)
 
-- **MCP server version:** 1.37.49
+- **MCP server version:** 1.37.51
 - **API version:** v4.0
 - **OpenAPI paths exposed:** 198
-- **MCP tools advertised:** 41
+- **MCP tools advertised:** 50
 - **Dispatchable task classes:** 29
-- **Official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.astranl&version=latest):** `com.astranl/mcp` v1.37.47 is the latest active entry; 5 `com.astranl` servers are active in total
+- **Official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.astranl&version=latest):** `com.astranl/mcp` v1.37.47 is the latest active entry; 6 `com.astranl` servers are active in total
 - **Glama:** not listed yet for this repository
 
 ## More ways to connect
@@ -120,7 +120,7 @@ Live at https://astranl.com/capabilities/dispatch/manifest
 - **Jurisdiction:** Netherlands (KvK 88449335, BTW NL004604224B69)
 - **Controls (scoped, self-assessed, not certified):** EU AI Act Art. 50 disclosure in every interaction; GDPR: controller for coordination metadata only (https://astranl.com/privacy.html); money: AstraNL never holds third-party funds (https://astranl.com/.well-known/payment-truth.json)
 - **Fee:** 1% coordination fee - only on a paid outcome, in force since 2026-09-01
-- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-11-24T01:36:29.251430+00:00)
+- **Liability:** AstraNL coordinates; the contract is between principal and executor; AstraNL's own liability is capped at the coordination fee charged on the errand. Canonical, always-current: https://astranl.com/.well-known/astranl-facts.json (canon epoch 2026-11-25T01:42:34.886921+00:00)
 
 ## Discovery
 
