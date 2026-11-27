@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-11T06:51:46.094417+00:00",
+  "probe_script": "probe.py",
+  "exit_code": 0,
+  "live_http_requests": 6,
+  "market_summaries": 11,
+  "markets_with_bids": 0,
+  "sampled_trade_count": 3,
+  "sampled_house_trades": 3,
+  "successful_paid_jobs_for_astranl": 0,
+  "no_ai_contribution_ban_found_in_reviewed_sources": true,
+  "reviewed_policy_sources": [
+    "https://github.com/gofrantic/frantic-mcp/blob/main/README.md",
+    "https://api.github.com/repos/gofrantic/frantic-mcp/contents/.github",
+    "https://github.com/amromawad/torquantis-mcp/blob/main/README.md",
+    "https://github.com/amromawad/torquantis-mcp/blob/main/GEMINI.md",
+    "https://torquantis.com/terms.txt",
+    "https://gofrantic.com/SKILL.md"
+  ],
+  "publication_note": "No emails, protected RFQ content, credentials, private keys or private data are present. Root should publish the reviewed probe, probe_result and report; operator_response is an unsent draft, not evidence of contact.",
+  "policy_note": "Frantic forbids GitHub comments as its board protocol. A response to the operator's interoperability issue is technical discussion, not a bounty claim. Do not use it to simulate claim/delivery/acceptance."
+}
